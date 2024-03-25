@@ -1,3 +1,5 @@
+using worker.API.Mapping;
+using Worker.Core.Mapping;
 using Worker.Core.Repositories;
 using Worker.Core.Services;
 using Worker.Data;
@@ -27,6 +29,8 @@ builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 
 builder.Services.AddDbContext<DataContext>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile), typeof(PostModelsMappingProfile));
 
 var app = builder.Build();
 

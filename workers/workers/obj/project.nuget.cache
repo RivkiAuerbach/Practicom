@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Cw3c8Kbcxgi2STLIWrSyvQwWpTKqxpimR5rzCd78zZowRP8iYOFkM1ZWxXq4tGQA4rRlF32+lJAG/IFD58M03Q==",
+  "dgSpecHash": "h4cEV03sC7B/mdfatJLxefTTAanDnV6TuJyqM8EeFHBnHuV03rNNF9mbzLsx4YceQ/Kt9Bypio6QSm7FfodLsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Desktop\\workers\\workers\\worker.API.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\workers\\worker.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\user1\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
