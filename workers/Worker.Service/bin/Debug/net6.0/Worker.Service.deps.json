@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Worker.Service/1.0.0": {
+        "dependencies": {
+          "Worker.Core": "1.0.0"
+        },
+        "runtime": {
+          "Worker.Service.dll": {}
+        }
+      },
+      "Worker.Core/1.0.0": {
+        "runtime": {
+          "Worker.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Worker.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Worker.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tnFfT42UmjJSuzhbZguU3Mkxy1gY5Ek9E21GWqXvoqk=",
+  "Source": "worker.API",
+  "BasePath": "_content/worker.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
