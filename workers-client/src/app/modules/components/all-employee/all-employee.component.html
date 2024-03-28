@@ -1,0 +1,20 @@
+<h2>employee list</h2>
+
+<div class="text-center">
+    <br>
+    <button (click)="addEmployeeToList()" class="btn btn-success">Add Course</button>
+</div>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <ul class="list-group">
+          <li *ngFor="let employee of employees" class="list-group-item">
+            <app-employee-details [employee]="employee"></app-employee-details>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+  

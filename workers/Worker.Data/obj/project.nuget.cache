@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pmvtiuv3n1c1hQfZbzPctHHMubY37lA+VXx07uzT5lKIxSTayRd+ofGsYFQ6EcZXY56Dk8zlVP3le+Jwb478bA==",
+  "dgSpecHash": "WGdH0GR2jIPkdftved0y3hbd3uQ2L6DU5zn5aXJk5++AfWGYSrn7mF5H2rj/MqhTJQBJMWDRelFd1xDjBWl8Yw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Data\\Worker.Data.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Data\\Worker.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

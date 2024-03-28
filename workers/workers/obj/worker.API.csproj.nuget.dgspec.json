@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\workers\\worker.API.csproj": {}
+    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\workers\\worker.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Core\\Worker.Core.csproj": {
+    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Core\\Worker.Core.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj",
         "projectName": "Worker.Core",
-        "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Core\\Worker.Core.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Core\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Data\\Worker.Data.csproj": {
+    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Data\\Worker.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Data\\Worker.Data.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Data\\Worker.Data.csproj",
         "projectName": "Worker.Data",
-        "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Data\\Worker.Data.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Data\\Worker.Data.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Data\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Core\\Worker.Core.csproj": {
-                "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Core\\Worker.Core.csproj"
+              "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj": {
+                "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Service\\Worker.Service.csproj": {
+    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Service\\Worker.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Service\\Worker.Service.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Service\\Worker.Service.csproj",
         "projectName": "Worker.Service",
-        "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Service\\Worker.Service.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Service\\Worker.Service.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Service\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -172,8 +172,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Core\\Worker.Core.csproj": {
-                "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Core\\Worker.Core.csproj"
+              "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj": {
+                "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj"
               }
             }
           }
@@ -207,14 +207,14 @@
         }
       }
     },
-    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\workers\\worker.API.csproj": {
+    "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\workers\\worker.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\workers\\worker.API.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\workers\\worker.API.csproj",
         "projectName": "worker.API",
-        "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\workers\\worker.API.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\workers\\worker.API.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\workers\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\workers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -235,11 +235,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Data\\Worker.Data.csproj": {
-                "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Data\\Worker.Data.csproj"
+              "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Data\\Worker.Data.csproj": {
+                "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Data\\Worker.Data.csproj"
               },
-              "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Service\\Worker.Service.csproj": {
-                "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\פרקטיקום\\workers\\Worker.Service\\Worker.Service.csproj"
+              "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Service\\Worker.Service.csproj": {
+                "projectPath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Service\\Worker.Service.csproj"
               }
             }
           }

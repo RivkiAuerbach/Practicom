@@ -1,0 +1,73 @@
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Add New Employee</h2>
+        <form>
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" [(ngModel)]="employee.firstName" name="firstName">
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" [(ngModel)]="employee.lastName" name="lastName">
+          </div>
+          <div class="mb-3">
+            <label for="idNumber" class="form-label">ID Number</label>
+            <input type="text" class="form-control" id="idNumber" [(ngModel)]="employee.idNumber" name="idNumber">
+          </div>
+          <div class="mb-3">
+            <label for="dateStartingWork" class="form-label">Starting Work Date</label>
+            <input type="date" class="form-control" id="dateSartingWork" [(ngModel)]="employee.dateSartingWork" name="dateSartingWork">
+          </div>
+          <div class="mb-3">
+            <label for="dateOfBirth" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="employee.dateOfBirth" name="dateOfBirth">
+          </div>
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <select class="form-select" id="gender" [(ngModel)]="employee.gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+
+
+
+          <div class="mb-3">
+            <label for="roles" class="form-label">Roles</label>
+            <div *ngFor="let role of employee.roles">
+              <div class="form-group">
+                <label for="roleName{{role.id}}" class="form-label">Role Name</label>
+                <select class="form-select" id="roleName{{role.id}}" [(ngModel)]="role.name" name="roleName{{role.id}}">
+                  <option value="Secretary">Secretary</option>
+                  <option value="Programmer">Programmer</option>
+                  <option value="Doctor">Doctor</option>
+                  <option value="Kindergartner">Kindergartner</option>
+                  <option value="Salesperson">Salesperson</option>
+                  <option value="Accountant">Accountant</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="isAdministrative{{role.id}}" class="form-label">Is Administrative</label>
+                <input type="checkbox" class="form-check-input" id="isAdministrative{{role.id}}" [(ngModel)]="role.isAdministrative" name="isAdministrative{{role.id}}">
+              </div>
+              <div class="form-group">
+                <label for="startDate{{role.id}}" class="form-label">Start Date</label>
+                <input type="date" class="form-control" id="startDate{{role.id}}" [(ngModel)]="role.startDate" name="startDate{{role.id}}">
+              </div>
+            </div>
+          </div>
+          
+
+
+
+
+
+          
+          <button type="submit" class="btn btn-primary" (click)="addEmployee()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+   -->

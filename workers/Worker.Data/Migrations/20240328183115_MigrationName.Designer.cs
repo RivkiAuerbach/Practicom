@@ -12,7 +12,7 @@ using Worker.Data;
 namespace Worker.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240325194814_MigrationName")]
+    [Migration("20240328183115_MigrationName")]
     partial class MigrationName
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -75,9 +75,8 @@ namespace Worker.Data.Migrations
                     b.Property<bool>("IsAdministrative")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Name")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
