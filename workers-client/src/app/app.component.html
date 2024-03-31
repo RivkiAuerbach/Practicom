@@ -1,7 +1,23 @@
 
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/allEmployee">allEmployee </a>
-    </li>
-   
+    <mat-toolbar>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/allEmployee">
+        <mat-icon>menu</mat-icon>
+      </button>
 
-<router-outlet ></router-outlet >
+      <span>Employee List</span>
+      <span class="example-spacer"></span>
+
+      <button mat-icon-button (click)="exportToExcel()">
+        <mat-icon>file_download</mat-icon>
+      </button>
+
+      <button mat-icon-button >
+        <mat-icon>favorite</mat-icon>
+      </button>
+
+      <button mat-icon-button >
+        <mat-icon>share</mat-icon>
+      </button>
+
+    </mat-toolbar>
+ <router-outlet ></router-outlet > 

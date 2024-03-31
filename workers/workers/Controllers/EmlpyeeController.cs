@@ -68,12 +68,16 @@ namespace worker.API.Controllers
 
         // DELETE api/<EmlpyeeController>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
+        //public async Task<ActionResult> Delete(int id)
+        //{
+        //    await _employeeService.DeleteAsync(id);
+        //    return NoContent();
+        //}
+        public async Task Delete(int id)
         {
             await _employeeService.DeleteAsync(id);
-            return NoContent();
             
-
         }
+
     }
 }

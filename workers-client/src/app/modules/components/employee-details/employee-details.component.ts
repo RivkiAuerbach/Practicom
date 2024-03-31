@@ -9,8 +9,10 @@ import { EmployeeService } from '../../services/employee.service';
   styleUrl: './employee-details.component.css'
 })
 export class EmployeeDetailsComponent {
-  @Input() 
-  employee!: Employee; 
-  constructor(private employeeService:EmployeeService,private route: ActivatedRoute) { }
+//   @Input() 
+//   employee!: Employee; 
+
+//   dataSource: any[] = [];
+//   constructor(private employeeService:EmployeeService,private route: ActivatedRoute) { }
   
 }

@@ -11,10 +11,18 @@ import { EditEmployeeComponent } from './modules/components/edit-employee/edit-e
 import { AllEmployeeComponent } from './modules/components/all-employee/all-employee.component';
 import { AddEmployeeComponent } from './modules/components/add-employee/add-employee.component';
 import { EmployeeDetailsComponent } from './modules/components/employee-details/employee-details.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatIconModule } from '@angular/material/icon'; 
+import { MatButtonModule, MatIconButton } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
     AppComponent,
     EditEmployeeComponent,
    AllEmployeeComponent,
@@ -30,16 +38,27 @@ import { EmployeeDetailsComponent } from './modules/components/employee-details/
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
+      { path: '', redirectTo: 'allEmployee', pathMatch: 'full' },
       { path: 'editEmployee', component: EditEmployeeComponent },
       { path: 'allEmployee', component: AllEmployeeComponent },
       { path: 'addEmployee', component: AddEmployeeComponent },
       { path: 'employeeDetails', component: EmployeeDetailsComponent },
      
     ]),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule ,
+    MatPaginatorModule,
+    MatIconModule,
+    MatToolbarModule, 
+    MatIconButton,
+    MatFormFieldModule,
+    MatInputModule, 
+       
   ],
   providers: [
     // provideClientHydration()
+  
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
