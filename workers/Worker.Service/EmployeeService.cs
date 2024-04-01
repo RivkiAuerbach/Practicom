@@ -21,9 +21,9 @@ namespace Worker.Service
             return await _employeeRepository.AddAsync(employee);
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
-            await _employeeRepository.DeleteAsync(id);
+            return await _employeeRepository.DeleteAsync(id);
         }
 
         public async Task<List<Employee>> GetAllAsync()

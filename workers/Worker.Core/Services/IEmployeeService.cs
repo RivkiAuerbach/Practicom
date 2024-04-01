@@ -12,7 +12,7 @@ namespace Worker.Core.Services
         Task<List<Employee>> GetAllAsync();
         Task<Employee> GetByIdAsync(int id);
         Task<Employee> UpdateAsync(Employee employee);
-        Task DeleteAsync(int id);
+        Task<bool> DeleteAsync(int id);
         Task<Employee> AddAsync(Employee employee);
     }
 }

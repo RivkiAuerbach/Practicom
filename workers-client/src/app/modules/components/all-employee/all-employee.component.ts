@@ -63,19 +63,34 @@ export class AllEmployeeComponent implements AfterViewInit {
   addEmployeeToList() {
     this.router.navigate(['/addEmployee']);
   }
+ 
+  // deleteEmployee(emplo:Employee): void {
 
-  deleteEmployee(id: number) {
-    this._employeeService.deleteEmployeeToServer(id).subscribe(() => {
-      // מציבים לרשימת העובדים את כל העובדים שסטטוסם לא פעיל
-      if(this.employees)
-      this.employees = this.employees.filter(employee => employee.id !== id);
-      console.log('Member deleted successfully');
-    }, error => {
-      console.error('Error deleting member:', error);
+ deleteEmployee(employee: Employee): void {
+    this._employeeService.deleteEmployeeToServer(employee.id!).subscribe({
+      next: () => {
+        this._employeeService.getEmployeeFromServer().subscribe(data => {
+          this.employees = data;
+          this.employees = this.employees.filter(employee => employee.isActive ==true);
+        
+        });
+      }
     });
-    console.log(this.employees);
   }
+
+    // console.log(emplo.id)
+    // this._employeeService.deleteEmployeeToServer(emplo.id).subscribe(() => {
+    //    if(this.employees)
+    //    this.employees = this.employees.filter(employee => employee.id !== emplo.id);
+    //    console.log('Employee deleted successfully');
+    // }, error => {
+    //   console.error('Error deleting employee:', error);
+    // });
+
+    // console.log(this.employees); 
   
+  
+
   editEmployee()
   { 
     this.router.navigate(['/editEmployee']);

@@ -35,14 +35,17 @@ namespace Worker.Data.Repositories
             return existEmployee;
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
             var existEmployee = await GetByIdAsync(id);
             if (existEmployee != null)
             {
                 existEmployee.IsActive = false;
                 await _context.SaveChangesAsync();
+                return true;
             }
+            return false;
+
         }
 
         public async Task<Employee> AddAsync(Employee employee)

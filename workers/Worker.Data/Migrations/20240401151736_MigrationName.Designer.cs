@@ -12,7 +12,7 @@ using Worker.Data;
 namespace Worker.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240328183115_MigrationName")]
+    [Migration("20240401151736_MigrationName")]
     partial class MigrationName
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

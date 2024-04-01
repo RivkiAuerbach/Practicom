@@ -53,8 +53,6 @@ namespace worker.API.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] EmployeePostModel value)
         {
-           
-
             var employee = await _employeeService.GetByIdAsync(id);
             if (employee is null)
             {
@@ -73,10 +71,15 @@ namespace worker.API.Controllers
         //    await _employeeService.DeleteAsync(id);
         //    return NoContent();
         //}
-        public async Task Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
+            var employee = await _employeeService.GetByIdAsync(id);
+            if (employee is null)
+            {
+                return NotFound();
+            }
             await _employeeService.DeleteAsync(id);
-            
+            return NoContent();
         }
 
     }
