@@ -67,7 +67,7 @@ namespace Worker.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("EmployeeId")
+                    b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsAdministrative")
@@ -90,7 +90,9 @@ namespace Worker.Data.Migrations
                 {
                     b.HasOne("Worker.Core.Models.Employee", null)
                         .WithMany("Roles")
-                        .HasForeignKey("EmployeeId");
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Worker.Core.Models.Employee", b =>

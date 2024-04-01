@@ -280,6 +280,12 @@ C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\bin\De
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\scopedcss\bundle\worker.API.styles.css
-C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\worker.API.csproj.CopyComplete
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\worker.API.genruntimeconfig.cache
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\ref\worker.API.dll
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\worker.API.sourcelink.json
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\staticwebassets\msbuild.worker.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\staticwebassets\msbuild.build.worker.API.props
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.worker.API.props
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.worker.API.props
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\obj\Debug\net6.0\worker.API.csproj.Up2Date

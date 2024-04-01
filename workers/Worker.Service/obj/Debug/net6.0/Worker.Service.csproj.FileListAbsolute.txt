@@ -53,8 +53,9 @@ C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\Worker.Service.AssemblyInfoInputs.cache
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\Worker.Service.AssemblyInfo.cs
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\Worker.Service.csproj.CoreCompileInputs.cache
-C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\Worker.Service.csproj.CopyComplete
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\Worker.Service.dll
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\refint\Worker.Service.dll
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\Worker.Service.pdb
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\ref\Worker.Service.dll
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\Worker.Service.sourcelink.json
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Service\obj\Debug\net6.0\Worker.S.196F55E5.Up2Date

@@ -45,3 +45,4 @@ C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Core\ob
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Core\obj\Debug\net6.0\refint\Worker.Core.dll
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Core\obj\Debug\net6.0\Worker.Core.pdb
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Core\obj\Debug\net6.0\ref\Worker.Core.dll
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Core\obj\Debug\net6.0\Worker.Core.sourcelink.json

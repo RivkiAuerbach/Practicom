@@ -63,6 +63,7 @@ C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\bi
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\bin\Debug\net6.0\Worker.Data.pdb
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\bin\Debug\net6.0\Worker.Core.dll
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\bin\Debug\net6.0\Worker.Core.pdb
-C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\obj\Debug\net6.0\Worker.Data.csproj.CopyComplete
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\obj\Debug\net6.0\Worker.Data.genruntimeconfig.cache
 C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\obj\Debug\net6.0\ref\Worker.Data.dll
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\obj\Debug\net6.0\Worker.Data.sourcelink.json
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\Worker.Data\obj\Debug\net6.0\Worker.D.3F414A1D.Up2Date

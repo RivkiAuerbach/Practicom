@@ -1,33 +1,5 @@
-// import {Component} from '@angular/core';
-// import { Router } from '@angular/router';
-// import { Employee } from '../../models/employee.model';
-// import { EmployeeService } from '../../services/employee.service';
 
-
-// @Component({
-//   selector: 'app-all-employee',
-//   templateUrl: './all-employee.component.html',
-//   styleUrl: './all-employee.component.css'
-// })
-// export class AllEmployeeComponent{
-//   employees:Employee[] | undefined;
-
-//   constructor(private _employeeService:EmployeeService ,private router: Router){
-
-//     _employeeService.getEmployeeFromServer().subscribe(data => {
-//       this.employees = data;
-//     })
-//   }
-//   addEmployeeToList()
-//   {
-//     this.router.navigate(['/addEmployee']);
-//   }
-// }
-
-
-
-
-import { AfterViewInit, Component, ViewChild,TemplateRef } from '@angular/core';
+import { AfterViewInit, Component, ViewChild,TemplateRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Employee } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
@@ -35,13 +7,14 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-all-employee',
   templateUrl: './all-employee.component.html',
   styleUrls: ['./all-employee.component.css']
 })
-export class AllEmployeeComponent implements AfterViewInit {
+export class AllEmployeeComponent implements OnInit {
   employees: Employee[] | undefined;
   dataSource: MatTableDataSource<Employee>;
   displayedColumns: string[] = ['id', 'firstname','lastname', 'date' ,'actions'];
@@ -51,10 +24,13 @@ export class AllEmployeeComponent implements AfterViewInit {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  ngAfterViewInit() {
+    ngOnInit() {
+    this.getEmployees();
+  }
+
+  getEmployees(): void {
     this._employeeService.getEmployeeFromServer().subscribe(data => {
-      this.employees = data;
-      this.employees = this.employees.filter(employee => employee.isActive ==true);
+      this.employees = data.filter(employee => employee.isActive);
       this.dataSource = new MatTableDataSource<Employee>(this.employees);
       this.dataSource.paginator = this.paginator;
     });
@@ -64,31 +40,28 @@ export class AllEmployeeComponent implements AfterViewInit {
     this.router.navigate(['/addEmployee']);
   }
  
-  // deleteEmployee(emplo:Employee): void {
-
- deleteEmployee(employee: Employee): void {
-    this._employeeService.deleteEmployeeToServer(employee.id!).subscribe({
-      next: () => {
-        this._employeeService.getEmployeeFromServer().subscribe(data => {
-          this.employees = data;
-          this.employees = this.employees.filter(employee => employee.isActive ==true);
-        
-        });
+  deleteEmployee(id: number): void {
+    //sweet alert
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
       }
     });
+    Toast.fire({
+      icon: "success",
+      title: "Deleted in successfully"
+    }).then(() => {
+      this._employeeService.deleteEmployeeToServer(id).subscribe(() => {
+        this.getEmployees();
+      });
+    });
   }
-
-    // console.log(emplo.id)
-    // this._employeeService.deleteEmployeeToServer(emplo.id).subscribe(() => {
-    //    if(this.employees)
-    //    this.employees = this.employees.filter(employee => employee.id !== emplo.id);
-    //    console.log('Employee deleted successfully');
-    // }, error => {
-    //   console.error('Error deleting employee:', error);
-    // });
-
-    // console.log(this.employees); 
-  
   
 
   editEmployee()

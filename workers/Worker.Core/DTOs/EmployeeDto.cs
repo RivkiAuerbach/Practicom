@@ -19,5 +19,10 @@ namespace Worker.Core.DTOs
         public DateTime DateOfBirth { get; set; }
         public Gender Gender { get; set; }
         public List<Role> Roles { get; set; }
+
+        public EmployeeDto()
+        {
+            IsActive = true;
+        }
     }
 }

@@ -10,7 +10,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EditEmployeeComponent } from './modules/components/edit-employee/edit-employee.component';
 import { AllEmployeeComponent } from './modules/components/all-employee/all-employee.component';
 import { AddEmployeeComponent } from './modules/components/add-employee/add-employee.component';
-import { EmployeeDetailsComponent } from './modules/components/employee-details/employee-details.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -25,7 +24,6 @@ import {MatInputModule} from '@angular/material/input';
     EditEmployeeComponent,
    AllEmployeeComponent,
    AddEmployeeComponent,
-   EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,8 +38,6 @@ import {MatInputModule} from '@angular/material/input';
       { path: 'editEmployee', component: EditEmployeeComponent },
       { path: 'allEmployee', component: AllEmployeeComponent },
       { path: 'addEmployee', component: AddEmployeeComponent },
-      { path: 'employeeDetails', component: EmployeeDetailsComponent },
-     
     ]),
     BrowserAnimationsModule,
     MatTableModule ,

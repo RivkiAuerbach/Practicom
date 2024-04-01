@@ -10,18 +10,6 @@
     <button (click)="addEmployeeToList()" class="btn btn-success">Add Course</button>
 </div>
 
-<!-- <div class="container">
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <ul class="list-group">
-          <li *ngFor="let employee of employees" class="list-group-item">
-            <app-employee-details [employee]="employee"></app-employee-details>
-          </li>
-        </ul>
-      </div>
-    </div>
-</div> --> 
-
 <br>
 <div class="mat-elevation-z8" >
   <table mat-table [dataSource]="dataSource" >
@@ -54,7 +42,7 @@
         <button mat-icon-button (click)="editEmployee()" mat-raised-button style="margin-right: 30px;">
           <mat-icon>edit</mat-icon>
         </button>
-        <button mat-icon-button (click)="deleteEmployee(element)" mat-raised-button>
+        <button mat-icon-button (click)="deleteEmployee(element.id)" mat-raised-button>
           <mat-icon>delete</mat-icon>
         </button>
       </td>

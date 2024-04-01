@@ -34,12 +34,10 @@ export class EmployeeService {
 }
 
 //server
-  deleteEmployeeToServer(id : Number): Observable<boolean> {
-    
-     return this._http.delete<boolean>("/api/Emlpyee/" + id);
+  deleteEmployeeToServer(id: number): Observable<boolean> {
+    return this._http.delete<boolean>(`https://localhost:7191/api/Emlpyee/${id}`); 
   }
 
- 
 
  
 }

@@ -12,8 +12,8 @@ using Worker.Data;
 namespace Worker.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240401151736_MigrationName")]
-    partial class MigrationName
+    [Migration("20240401200830_dbWorkers")]
+    partial class dbWorkers
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -69,7 +69,7 @@ namespace Worker.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("EmployeeId")
+                    b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsAdministrative")
@@ -92,7 +92,9 @@ namespace Worker.Data.Migrations
                 {
                     b.HasOne("Worker.Core.Models.Employee", null)
                         .WithMany("Roles")
-                        .HasForeignKey("EmployeeId");
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Worker.Core.Models.Employee", b =>
