@@ -18,6 +18,7 @@ import { MatButtonModule, MatIconButton } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +47,8 @@ import {MatInputModule} from '@angular/material/input';
     MatToolbarModule, 
     MatIconButton,
     MatFormFieldModule,
-    MatInputModule, 
+    MatInputModule,
+    NgbModule, 
        
   ],
   providers: [

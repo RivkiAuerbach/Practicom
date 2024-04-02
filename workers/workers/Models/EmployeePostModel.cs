@@ -11,6 +11,7 @@ namespace worker.API.Models
         public DateTime DateSartingWork { get; set; }
         public DateTime DateOfBirth { get; set; }
         public Gender Gender { get; set; }
-        public List<Role> Roles { get; set; }
+
+        //public List<Role> Roles { get; set; }
     }
 }

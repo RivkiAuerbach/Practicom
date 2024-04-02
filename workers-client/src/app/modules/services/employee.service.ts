@@ -23,13 +23,12 @@ export class EmployeeService {
 
   
   return this._http.put<Employee>(url, employee).pipe(
-    tap(updatedCourse => console.log('Employee updated successfully:', updatedCourse))
+    tap(updatedEmployee => console.log('Employee updated successfully:', updatedEmployee))
   );
 }
 
 //server
   addEmployeeToServer(employee: Employee): Observable<Employee> {
-  
   return this._http.post<Employee>("/api/Emlpyee/", employee);
 }
 
@@ -37,7 +36,5 @@ export class EmployeeService {
   deleteEmployeeToServer(id: number): Observable<boolean> {
     return this._http.delete<boolean>(`https://localhost:7191/api/Emlpyee/${id}`); 
   }
-
-
  
 }

@@ -12,8 +12,8 @@ using Worker.Data;
 namespace Worker.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240401200830_dbWorkers")]
-    partial class dbWorkers
+    [Migration("20240402132045_dbWorker")]
+    partial class dbWorker
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
