@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|solutionrelative:worker.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\controllers\\emlpyeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\controllers\\emlpyeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Migrations\\20240402132045_dbWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Worker.Data\\Migrations\\20240402132045_dbWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|solutionrelative:worker.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|c:\\users\\user1\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\practicom\\workers\\worker.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|solutionrelative:worker.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\models\\rolepostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\models\\employeepostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|c:\\users\\user1\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\practicom\\workers\\workers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|solutionrelative:worker.data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|solutionrelative:worker.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.core\\dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|solutionrelative:worker.core\\dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -65,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\mapping\\postmodelsmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\mapping\\postmodelsmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\controllers\\emlpyeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\controllers\\emlpyeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40015C21-DED8-4063-8B22-9B07B8919F6B}|Worker.Service\\Worker.Service.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -128,6 +124,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320124543_MigrationName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Migrations\\20240402132045_dbWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|solutionrelative:Worker.Data\\Migrations\\20240402132045_dbWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -137,15 +137,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 32,
               "Title": "20240402132045_dbWorker.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Migrations\\20240402132045_dbWorker.cs",
               "RelativeDocumentMoniker": "Worker.Data\\Migrations\\20240402132045_dbWorker.cs",
@@ -153,24 +149,24 @@
               "RelativeToolTip": "Worker.Data\\Migrations\\20240402132045_dbWorker.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T13:20:45.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T13:20:45.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "Worker.Data\\Repositories\\EmployeeRepository.cs",
               "ToolTip": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Repositories\\EmployeeRepository.cs",
               "RelativeToolTip": "Worker.Data\\Repositories\\EmployeeRepository.cs",
-              "ViewState": "AQIAABMAAACAZmZmZuYjwBUAAABBAAAA",
+              "ViewState": "AQIAABMAAABAMzMzM/M4wBUAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.041Z"
+              "WhenOpened": "2024-03-25T21:44:38.041Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Core\\Models\\Role.cs",
               "RelativeDocumentMoniker": "Worker.Core\\Models\\Role.cs",
@@ -183,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EmployeePostModel.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\Models\\EmployeePostModel.cs",
               "RelativeDocumentMoniker": "workers\\Models\\EmployeePostModel.cs",
@@ -191,12 +187,11 @@
               "RelativeToolTip": "workers\\Models\\EmployeePostModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RolePostModel.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\Models\\RolePostModel.cs",
               "RelativeDocumentMoniker": "workers\\Models\\RolePostModel.cs",
@@ -204,12 +199,11 @@
               "RelativeToolTip": "workers\\Models\\RolePostModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "EmployeeDto.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Core\\DTOs\\EmployeeDto.cs",
               "RelativeDocumentMoniker": "Worker.Core\\DTOs\\EmployeeDto.cs",
@@ -233,7 +227,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "EmlpyeeController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\Controllers\\EmlpyeeController.cs",
+              "RelativeDocumentMoniker": "workers\\Controllers\\EmlpyeeController.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\Controllers\\EmlpyeeController.cs",
+              "RelativeToolTip": "workers\\Controllers\\EmlpyeeController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwEwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T21:44:38.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Core\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Worker.Core\\Models\\Employee.cs",
@@ -245,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\Program.cs",
               "RelativeDocumentMoniker": "workers\\Program.cs",
@@ -253,12 +264,11 @@
               "RelativeToolTip": "workers\\Program.cs",
               "ViewState": "AQIAACQAAAAAZmZmZmYEwC4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:37.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:37.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Worker.Core.csproj",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj",
               "RelativeDocumentMoniker": "Worker.Core\\Worker.Core.csproj",
@@ -282,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "20240401200138_dbWorkers.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Migrations\\20240401200138_dbWorkers.cs",
               "RelativeDocumentMoniker": "Worker.Data\\Migrations\\20240401200138_dbWorkers.cs",
@@ -294,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Repositories\\RoleRepository.cs",
               "RelativeDocumentMoniker": "Worker.Data\\Repositories\\RoleRepository.cs",
@@ -330,18 +340,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EmlpyeeController.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\Controllers\\EmlpyeeController.cs",
-              "RelativeDocumentMoniker": "workers\\Controllers\\EmlpyeeController.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\Controllers\\EmlpyeeController.cs",
-              "RelativeToolTip": "workers\\Controllers\\EmlpyeeController.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAowEwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.002Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Core\\Repositories\\IEmployeeRepository.cs",
@@ -354,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "RoleService.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Service\\RoleService.cs",
               "RelativeDocumentMoniker": "Worker.Service\\RoleService.cs",
@@ -366,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Service\\EmployeeService.cs",
               "RelativeDocumentMoniker": "Worker.Service\\EmployeeService.cs",
@@ -378,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "IRoleService.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Core\\Services\\IRoleService.cs",
               "RelativeDocumentMoniker": "Worker.Core\\Services\\IRoleService.cs",
@@ -390,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "RoleController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\Controllers\\RoleController.cs",
               "RelativeDocumentMoniker": "workers\\Controllers\\RoleController.cs",
@@ -402,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "20240328182808_MigrationName.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Migrations\\20240328182808_MigrationName.cs",
               "RelativeDocumentMoniker": "Worker.Data\\Migrations\\20240328182808_MigrationName.cs",
@@ -414,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "20240328165759_MigrationName.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Migrations\\20240328165759_MigrationName.cs",
               "RelativeDocumentMoniker": "Worker.Data\\Migrations\\20240328165759_MigrationName.cs",
@@ -426,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "20240328165649_MigrationName.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Data\\Migrations\\20240328165649_MigrationName.cs",
               "RelativeDocumentMoniker": "Worker.Data\\Migrations\\20240328165649_MigrationName.cs",
@@ -438,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Core\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Worker.Core\\Mapping\\MappingProfile.cs",
@@ -450,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "20240325194012_MigrationName.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240325194012_MigrationName.cs",
               "RelativeDocumentMoniker": "..\\..\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240325194012_MigrationName.cs",
@@ -462,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "worker.API.csproj",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\worker.API.csproj",
               "RelativeDocumentMoniker": "workers\\worker.API.csproj",
@@ -474,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "20240325193901_MigrationName.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240325193901_MigrationName.cs",
               "RelativeDocumentMoniker": "..\\..\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240325193901_MigrationName.cs",
@@ -486,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "IRoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Core\\Repositories\\IRoleRepository.cs",
               "RelativeDocumentMoniker": "Worker.Core\\Repositories\\IRoleRepository.cs",
@@ -498,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "20240320140525_sample_db.cs",
               "DocumentMoniker": "C:\\Users\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320140525_sample_db.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320140525_sample_db.cs",
@@ -510,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\appsettings.json",
               "RelativeDocumentMoniker": "workers\\appsettings.json",
@@ -522,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "20240320130302_MigrationName.cs",
               "DocumentMoniker": "C:\\Users\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320130302_MigrationName.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320130302_MigrationName.cs",
@@ -534,7 +532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "20240320124543_MigrationName.cs",
               "DocumentMoniker": "C:\\Users\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320124543_MigrationName.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320124543_MigrationName.cs",

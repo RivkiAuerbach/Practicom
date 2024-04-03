@@ -1,1 +1,73 @@
-<p>edit-employee works!</p>
+
+<!-- <div class="detail">
+    <button (click)="toggleVaccinationDetails()" class="btn btn-primary" (click)="addEmployee()">Add Roles</button>
+ </div>
+    <div class="d-flex"   *ngIf="showVaccinationDetails" class="add-roles"> -->
+      <!-- <div>
+        <label for="roleId" class="form-label">EmployeeId</label>
+        <input type="text" class="form-control" id="roleEmployeeId" name="roleEmployeeId" [(ngModel)]="role.employeeId">
+     </div> -->
+        <!-- <div>
+            <label for="roleName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="roleName" name="roleName" [(ngModel)]="role.name">
+        </div>
+        <div>
+          <br>
+            <input type="checkbox" class="form-check-input" id="roleAdministrative" name="roleAdministrative" [(ngModel)]="role.isAdministrative">
+            <label for="roleIsAdmin" class="form-label">  Is Administrative</label>
+        </div>
+        <div>
+            <label for="roleStartDate" class="form-label">Start Date</label>
+            <input type="date" class="form-control" id="roleStartDate" name="roleStartDate" [(ngModel)]="role.startDate">
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="addRole()">Add</button>
+    </div> -->
+   
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h2>Add New Employee</h2>
+            <form>
+              <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" [(ngModel)]="employee.firstName" name="firstName">
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" [(ngModel)]="employee.lastName" name="lastName">
+              </div>
+              <div class="mb-3">
+                <label for="idNumber" class="form-label">ID Number</label>
+                <input type="text" class="form-control" id="idNumber" [(ngModel)]="employee.idNumber" name="idNumber"  required (input)="validateId()">
+                <div *ngIf="idInvalid" class="error-message">Identity must contain exactly 9 digits</div>
+              </div>
+              <div class="mb-3">
+                <label for="dateStartingWork" class="form-label">Starting Work Date</label>
+                <input type="date" class="form-control" id="dateSartingWork" [(ngModel)]="employee.dateSartingWork" name="dateSartingWork">
+              </div>
+              <div class="mb-3">
+                <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="employee.dateOfBirth" name="dateOfBirth">
+              </div>
+    
+    
+              <!-- <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-select" id="gender" [(ngModel)]="employee.gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div> -->
+    
+    
+           
+           
+    
+              <br>
+              <button type="submit" class="btn btn-primary" (click)="editEmployee()">Save</button> 
+            </form>
+          </div>
+        </div>
+      </div>
+      

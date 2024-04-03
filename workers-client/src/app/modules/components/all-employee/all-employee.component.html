@@ -6,10 +6,6 @@
     <input matInput type="text"  [(ngModel)]="searchText" (input)="applyFilter()">
   </mat-form-field>
 
-  <br>
-    <button (click)="addEmployeeToList()" class="btn btn-success">Add Course</button>
-</div>
-
 <br>
 <div class="mat-elevation-z8" >
   <table mat-table [dataSource]="dataSource" >
@@ -39,7 +35,7 @@
     <ng-container matColumnDef="actions">
       <th mat-header-cell *matHeaderCellDef></th>
       <td mat-cell *matCellDef="let element">
-        <button mat-icon-button (click)="editEmployee()" mat-raised-button style="margin-right: 30px;">
+        <button mat-icon-button (click)="editEmployee(element)" mat-raised-button style="margin-right: 30px;">
           <mat-icon>edit</mat-icon>
         </button>
         <button mat-icon-button (click)="deleteEmployee(element.id)" mat-raised-button>

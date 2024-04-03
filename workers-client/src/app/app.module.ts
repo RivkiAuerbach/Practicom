@@ -19,12 +19,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './modules/components/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
     EditEmployeeComponent,
    AllEmployeeComponent,
    AddEmployeeComponent,
+   NavbarComponent,
   ],
   imports: [
     BrowserModule,

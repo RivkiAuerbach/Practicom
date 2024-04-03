@@ -13,9 +13,7 @@ import { Role } from '../../models/role.model';
 })
 export class AddEmployeeComponent {
   employee: Employee = new Employee(0, '', '', '', false, new Date(), new Date(), 0, []);
-  role:Role=new Role(0,0,false,new Date(),0);
-  showVaccinationDetails: boolean = false;
-constructor(private _employeeService:EmployeeService,private _roleService:RoleService,private router: Router){}
+  constructor(private _employeeService:EmployeeService,private _roleService:RoleService,private router: Router){}
 
   addEmployee() {
     const employeePostModel: any = {
@@ -51,6 +49,15 @@ constructor(private _employeeService:EmployeeService,private _roleService:RoleSe
   });
   }
   }
+  addRoles()
+  {
+    this.router.navigate(['/editEmployee']);
+  }
+  cancelaAddEmployee()
+  {
+    this.router.navigate(['/allEmployee']);
+  }
+
 
 
   //בדיקות תקינות לקלטים:
@@ -65,38 +72,6 @@ validateId(): void {
   }
 }
 
-
-toggleVaccinationDetails() {
-  this.showVaccinationDetails = !this.showVaccinationDetails;
-  
-}
-
-addRole()
-{
-  const rolePostModel: any = {
-  name:this.role.name,
-  isAdministrative: this.role.isAdministrative,
-  startDate: this.role.startDate,
-  employeeId:this.role.id
-
-  };
-console.log(rolePostModel)
-  
-    this._roleService.addRoleToServer(rolePostModel).subscribe(data => {
-      if (data) {
-        this.clearRoleFields();
-      }
-    });
-
-}
-
-clearRoleFields() {
- 
-    this.role.name=0;
-    this.role.isAdministrative = false;
-    this.role.startDate = new Date();
-  
-}
 }
 
 

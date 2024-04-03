@@ -17,11 +17,9 @@ export class EmployeeService {
   }
 
 //server
-  updateEmployee(employee: Employee): Observable<Employee> {
+  updateEmployeeToServer(id:number, employee: Employee): Observable<Employee> {
   
-  const url = `/api/Emlpyee?id=${employee.id}`;
-
-  
+  const url = `/api/Emlpyee?id=${id}`;  
   return this._http.put<Employee>(url, employee).pipe(
     tap(updatedEmployee => console.log('Employee updated successfully:', updatedEmployee))
   );

@@ -35,10 +35,6 @@ export class AllEmployeeComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
     });
   }
-
-  addEmployeeToList() {
-    this.router.navigate(['/addEmployee']);
-  }
  
   deleteEmployee(id: number): void {
     //sweet alert
@@ -63,10 +59,9 @@ export class AllEmployeeComponent implements OnInit {
     });
   }
   
-
-  editEmployee()
+  editEmployee(employee:Employee)
   { 
-    this.router.navigate(['/editEmployee']);
+    this.router.navigate(['/editEmployee'],{ state: { employee } });
   }
 
 
