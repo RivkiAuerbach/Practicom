@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Employee } from '../../models/employee.model';
+import { Employee,Gender } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
 import Swal from 'sweetalert2'
 @Component({
@@ -9,39 +9,6 @@ import Swal from 'sweetalert2'
   styleUrl: './edit-employee.component.css'
 })
 export class EditEmployeeComponent  implements OnInit {
-  // role:Role=new Role(0,0,false,new Date(),0);
-  // showVaccinationDetails: boolean = false;
-  // toggleVaccinationDetails() {
-  //   this.showVaccinationDetails = !this.showVaccinationDetails;
-    
-  // }
-  
-  // addRole()
-  // {
-  //   const rolePostModel: any = {
-  //   name:this.role.name,
-  //   isAdministrative: this.role.isAdministrative,
-  //   startDate: this.role.startDate,
-  //   employeeId:this.employee.id
-  
-  //   };
-  // console.log(rolePostModel)
-    
-  //     this._roleService.addRoleToServer(rolePostModel).subscribe(data => {
-  //       if (data) {
-  //         this.clearRoleFields();
-  //       }
-  //     });
-  
-  // }
-  
-  // clearRoleFields() {
-   
-  //     this.role.name=0;
-  //     this.role.isAdministrative = false;
-  //     this.role.startDate = new Date();
-    
-  // }
 
   employee: Employee = new Employee(0, '', '', '', false, new Date(), new Date(), 0, []);
 
@@ -53,13 +20,14 @@ export class EditEmployeeComponent  implements OnInit {
 
   editEmployee()
 
-  {  const employeePostModel: any = {
+  { const employeePostModel: any = {
     firstName: this.employee.firstName,
     lastName: this.employee.lastName,
     idNumber: this.employee.idNumber,
-    dateStartingWork: this.employee.dateSartingWork,
+    dateSartingWork: this.employee.dateSartingWork,
     dateOfBirth: this.employee.dateOfBirth,
-    gender: this.employee.gender,
+    // gender: this.employee.gender,
+    gender: this.employee.gender === Gender.male ? 0 : 1,
 
   };
   console.log(employeePostModel)

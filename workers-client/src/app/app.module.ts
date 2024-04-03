@@ -20,6 +20,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './modules/components/navbar/navbar.component';
+import { RolesByEmployeeComponent } from './modules/components/roles-by-employee/roles-by-employee.component';
+import { AddRoleComponent } from './modules/components/add-role/add-role.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +30,8 @@ import { NavbarComponent } from './modules/components/navbar/navbar.component';
    AllEmployeeComponent,
    AddEmployeeComponent,
    NavbarComponent,
+   RolesByEmployeeComponent,
+   AddRoleComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,8 @@ import { NavbarComponent } from './modules/components/navbar/navbar.component';
       { path: 'editEmployee', component: EditEmployeeComponent },
       { path: 'allEmployee', component: AllEmployeeComponent },
       { path: 'addEmployee', component: AddEmployeeComponent },
+      { path: 'rolesByEmployee', component: RolesByEmployeeComponent },
+      { path: 'addRole', component: AddRoleComponent }
     ]),
     BrowserAnimationsModule,
     MatTableModule ,
@@ -51,6 +58,7 @@ import { NavbarComponent } from './modules/components/navbar/navbar.component';
     MatFormFieldModule,
     MatInputModule,
     NgbModule, 
+    MatDialogModule,
        
   ],
   providers: [
