@@ -1,11 +1,11 @@
 import { Data } from "@angular/router";
 export enum Name {
-    Secretary, 
-    programmer, 
-    doctor, 
-    kindergartner, 
-    salesperson, 
-    accountant 
+    Secretary=1, 
+    programmer=2,
+    doctor=3, 
+    kindergartner=4, 
+    salesperson=5, 
+    accountant =6
 }
 
 export class Role {

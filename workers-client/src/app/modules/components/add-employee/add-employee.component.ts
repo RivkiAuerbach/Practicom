@@ -22,7 +22,7 @@ export class AddEmployeeComponent {
       idNumber: this.employee.idNumber,
       dateStartingWork: this.employee.dateSartingWork,
       dateOfBirth: this.employee.dateOfBirth,
-      gender: this.employee.gender === Gender.male ? 0 : 1,
+      gender:Number(Gender[this.employee.gender!]),
 
     };
     if (!this.idInvalid ){

@@ -26,8 +26,7 @@ export class EditEmployeeComponent  implements OnInit {
     idNumber: this.employee.idNumber,
     dateSartingWork: this.employee.dateSartingWork,
     dateOfBirth: this.employee.dateOfBirth,
-    // gender: this.employee.gender,
-    gender: this.employee.gender === Gender.male ? 0 : 1,
+    gender:Number(Gender[this.employee.gender!]),
 
   };
   console.log(employeePostModel)
