@@ -1,7 +1,7 @@
 
 import { AfterViewInit, Component, ViewChild,TemplateRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Employee } from '../../models/employee.model';
+import { Employee,Gender } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
@@ -58,7 +58,8 @@ export class AllEmployeeComponent implements OnInit {
       });
     });
   }
-  
+
+
   editEmployee(employee:Employee)
   { 
     this.router.navigate(['/editEmployee'],{ state: { employee } });

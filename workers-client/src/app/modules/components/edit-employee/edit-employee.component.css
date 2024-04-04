@@ -9,4 +9,9 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+  .custom-btn {
+    width: 200px;
+}
+.text-center {
+  text-align: center;
+}

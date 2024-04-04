@@ -4,7 +4,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
-import { Role } from '../../models/role.model';
+import { Name, Role } from '../../models/role.model';
 import { RoleService } from '../../services/role.service';
 import { Employee } from '../../models/employee.model';
 import { MatDialog } from '@angular/material/dialog';
@@ -43,6 +43,17 @@ export class RolesByEmployeeComponent implements OnInit {
         });
   }
     
+  getNameByNumber(num: number): string | undefined {
+    const nameKeys = Object.keys(Name);
+    const stringNameKeys = nameKeys.filter(key => isNaN(Number(key)));
+    const index = num - 1;
+    
+    if (index >= 0 && index < stringNameKeys.length) {
+      return stringNameKeys[index];
+    } else {
+      return undefined;
+    }
+  }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(AddRoleComponent, {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M8snZ04t7WtNPGaQKkfWpfHcCKmUnIe9laD0xXUcAbTLI7Cu0sFZ5BvawpthwC5Ekt2McJ5DGrsuVTCU6obvGA==",
+  "dgSpecHash": "Ao79FhTPhC0S1EVVJzY7d2CChl+C27HWZRwGo+73B1/RMGHdQoTBY3m0f7N6O26YzCo4SkpAe4v6krUkzlvx/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\workers\\worker.API.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Downloads\\Practicom-main\\workers\\workers\\worker.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",

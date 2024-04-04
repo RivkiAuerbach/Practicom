@@ -1,7 +1,7 @@
 import { Role } from "./role.model";
 
 export enum Gender {
-    male ,
+    male,
     female
 }
 

@@ -14,19 +14,20 @@ import { Role } from '../../models/role.model';
 export class AddEmployeeComponent {
   employee: Employee = new Employee(0, '', '', '', false, new Date(), new Date(), 0, []);
   constructor(private _employeeService:EmployeeService,private _roleService:RoleService,private router: Router){}
-
+  
   addEmployee() {
-    const employeePostModel: any = {
+   const employeePostModel: any = {
       firstName: this.employee.firstName,
       lastName: this.employee.lastName,
       idNumber: this.employee.idNumber,
       dateStartingWork: this.employee.dateSartingWork,
       dateOfBirth: this.employee.dateOfBirth,
       gender:Number(Gender[this.employee.gender!]),
-
+  
     };
+
+    console.log(employeePostModel)
     if (!this.idInvalid ){
-   //sweet alert
    const Toast = Swal.mixin({
     toast: true,
     position: "top-end",
@@ -50,16 +51,35 @@ export class AddEmployeeComponent {
   });
   }
   }
-  addRoles()
+
+
+  
+  addRoles(employee:Employee)
   {
-    this.router.navigate(['/editEmployee']);
+    const employeePostModel: any = {
+      firstName: this.employee.firstName,
+      lastName: this.employee.lastName,
+      idNumber: this.employee.idNumber,
+      dateStartingWork: this.employee.dateSartingWork,
+      dateOfBirth: this.employee.dateOfBirth,
+      gender:Number(Gender[this.employee.gender!]),
+  
+    };
+    if (!this.idInvalid ){
+      this._employeeService.addEmployeeToServer(employeePostModel).subscribe(data => {
+        if (data) {
+          employee.id=data.id;
+          this.router.navigate(['/editEmployee'],{ state: { employee } });
+        }
+      });
+    }
   }
+
+
   cancelaAddEmployee()
   {
     this.router.navigate(['/allEmployee']);
   }
-
-
 
   //בדיקות תקינות לקלטים:
 

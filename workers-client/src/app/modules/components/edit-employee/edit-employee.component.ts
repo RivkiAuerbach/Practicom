@@ -10,16 +10,15 @@ import Swal from 'sweetalert2'
 })
 export class EditEmployeeComponent  implements OnInit {
 
-  employee: Employee = new Employee(0, '', '', '', false, new Date(), new Date(), 0, []);
+  employee: Employee = new Employee(0, '', '', '', false, new Date(), new Date(),0, []);
 
   constructor(private _employeeService: EmployeeService,private router: Router) { }
 
   ngOnInit(): void {
-    this.employee = history.state.employee; 
+    this.employee = history.state.employee;
   }
 
   editEmployee()
-
   { const employeePostModel: any = {
     firstName: this.employee.firstName,
     lastName: this.employee.lastName,
@@ -27,10 +26,8 @@ export class EditEmployeeComponent  implements OnInit {
     dateSartingWork: this.employee.dateSartingWork,
     dateOfBirth: this.employee.dateOfBirth,
     gender:Number(Gender[this.employee.gender!]),
-
-  };
-  console.log(employeePostModel)
- { if (!this.idInvalid ){
+      };
+  if (!this.idInvalid ){
  //sweet alert
  const Toast = Swal.mixin({
   toast: true,
@@ -47,7 +44,6 @@ Toast.fire({
   icon: "success",
   title: "You Edited in successfully"
 }).then(() => {
-  console.log(this.employee.id)
   this._employeeService.updateEmployeeToServer(this.employee.id, employeePostModel).subscribe(data => {
     if (data) {
       this.router.navigate(['/allEmployee']);
@@ -56,8 +52,17 @@ Toast.fire({
 });
 }}
 
+getGenderByNumber(num: number): string | undefined {
+  const genderKeys = Object.keys(Gender);
+  const stringGenderKeys = genderKeys.filter(key => isNaN(Number(key)));
+  const index = num - 1;
+  
+  if (index >= 0 && index < stringGenderKeys.length) {
+    return stringGenderKeys[index];
+  } else {
+    return undefined;
   }
-
+}
    //בדיקות תקינות לקלטים:
 
 idInvalid: boolean = false;
