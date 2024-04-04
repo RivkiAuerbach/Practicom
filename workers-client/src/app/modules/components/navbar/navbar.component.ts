@@ -17,6 +17,7 @@ export class NavbarComponent {
     });
   }
 
+//המרה לאקסל
   exportToExcel(): void {
     if (this.employees) {
     const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(this.employees);
@@ -36,4 +37,9 @@ export class NavbarComponent {
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
   }
+
+//התחברות לגימייל ושליחת מייל לבעל האתר
+  handleEmailClick = () => {
+    window.open("https://mail.google.com/mail/?view=cm&to=rivki5760@gmail.com&su=Question/Comment&body=Dear Site Administrator");
+  };
 }

@@ -23,6 +23,8 @@ import { NavbarComponent } from './modules/components/navbar/navbar.component';
 import { RolesByEmployeeComponent } from './modules/components/roles-by-employee/roles-by-employee.component';
 import { AddRoleComponent } from './modules/components/add-role/add-role.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,6 +61,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatInputModule,
     NgbModule, 
     MatDialogModule,
+    ReactiveFormsModule
        
   ],
   providers: [

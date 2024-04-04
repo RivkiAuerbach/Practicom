@@ -1,99 +1,127 @@
+
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Employee,Gender } from '../../models/employee.model';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Employee, Gender } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 import { RoleService } from '../../services/role.service';
 import { Role } from '../../models/role.model';
 
 @Component({
   selector: 'app-add-employee',
   templateUrl: './add-employee.component.html',
-  styleUrl: './add-employee.component.css'
+  styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent {
-  employee: Employee = new Employee(0, '', '', '', false, new Date(), new Date(), 0, []);
-  constructor(private _employeeService:EmployeeService,private _roleService:RoleService,private router: Router){}
-  
+  employeeForm: FormGroup; 
+  idInvalid: boolean = false;
+
+  constructor(
+    private fb: FormBuilder, private _employeeService: EmployeeService, private _roleService: RoleService,private router: Router ) 
+    {
+      this.employeeForm = this.fb.group({
+        firstName: ['', [Validators.required, Validators.minLength(1)]], 
+        lastName: ['', [Validators.required, Validators.minLength(1)]], 
+        idNumber: ['', [Validators.required, Validators.pattern('^[0-9]{9}$')]], 
+        dateSartingWork: ['', Validators.required], 
+        dateOfBirth: ['', Validators.required], 
+        gender: ['male', Validators.required] 
+      });
+  }
+
   addEmployee() {
-   const employeePostModel: any = {
-      firstName: this.employee.firstName,
-      lastName: this.employee.lastName,
-      idNumber: this.employee.idNumber,
-      dateStartingWork: this.employee.dateSartingWork,
-      dateOfBirth: this.employee.dateOfBirth,
-      gender:Number(Gender[this.employee.gender!]),
   
-    };
+      const employeePostModel: any = {
+        firstName: this.employeeForm.value.firstName,
+        lastName: this.employeeForm.value.lastName,
+        idNumber: this.employeeForm.value.idNumber,
+        dateSartingWork: this.employeeForm.value.dateSartingWork,
+        dateOfBirth: this.employeeForm.value.dateOfBirth,
+        gender: Number(Gender[this.employeeForm.value.gender])
+      };
 
-    console.log(employeePostModel)
-    if (!this.idInvalid ){
-   const Toast = Swal.mixin({
-    toast: true,
-    position: "top-end",
-    showConfirmButton: false,
-    timer: 2000,
-    timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.onmouseenter = Swal.stopTimer;
-      toast.onmouseleave = Swal.resumeTimer;
+      if (this.employeeForm.valid) {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+
+      Toast.fire({
+        icon: "success",
+        title: "You Added in successfully"
+      }).then(() => {
+        this._employeeService.addEmployeeToServer(employeePostModel).subscribe(data => {
+          if (data) {
+            this.router.navigate(['/allEmployee']);
+          }
+        });
+      });
     }
-  });
-  Toast.fire({
-    icon: "success",
-    title: "You Added in successfully"
-  }).then(() => {
-    this._employeeService.addEmployeeToServer(employeePostModel).subscribe(data => {
-      if (data) {
-        this.router.navigate(['/allEmployee']);
+
+      else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Invalid input/missing input'
+        });
       }
-    });
-  });
-  }
-  }
-
-
+    }
+    
   
-  addRoles(employee:Employee)
-  {
-    const employeePostModel: any = {
-      firstName: this.employee.firstName,
-      lastName: this.employee.lastName,
-      idNumber: this.employee.idNumber,
-      dateStartingWork: this.employee.dateSartingWork,
-      dateOfBirth: this.employee.dateOfBirth,
-      gender:Number(Gender[this.employee.gender!]),
-  
-    };
-    if (!this.idInvalid ){
-      this._employeeService.addEmployeeToServer(employeePostModel).subscribe(data => {
+
+  addRoles() {
+      const employeePostModel: any = {
+        firstName: this.employeeForm.value.firstName,
+        lastName: this.employeeForm.value.lastName,
+        idNumber: this.employeeForm.value.idNumber,
+        dateSartingWork: this.employeeForm.value.dateSartingWork,
+        dateOfBirth: this.employeeForm.value.dateOfBirth,
+        gender: Number(Gender[this.employeeForm.value.gender])
+      };
+
+      if (this.employeeForm.valid) {
+
+       const employee: Employee = this.employeeForm.getRawValue();
+       this._employeeService.addEmployeeToServer(employeePostModel).subscribe(data => {
         if (data) {
           employee.id=data.id;
-          this.router.navigate(['/editEmployee'],{ state: { employee } });
+          this.router.navigate(['/editEmployee'], { state: { employee } });
         }
       });
     }
-  }
-
-
-  cancelaAddEmployee()
-  {
+      else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Invalid input/missing input'
+        });
+      }
+}
+  cancelAddEmployee() {
     this.router.navigate(['/allEmployee']);
   }
 
-  //בדיקות תקינות לקלטים:
-
-idInvalid: boolean = false;
-validateId(): void {
-  // בדיקת אורך תעודת הזהות - חייבת להיות בדיוק 9 תווים ולהכיל רק מספרים
-  if (this.employee.idNumber && /^[0-9]{9}$/.test(this.employee.idNumber)) {
-    this.idInvalid = false;
-  } else {
-    this.idInvalid = true;
-  }
 }
 
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

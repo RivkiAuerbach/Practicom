@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8cU9rvODkb9JBS5yUnwiFzKDnZWT/3ztFK7MKFpeSI9CjiqodzpNuQwBpTv9xijh5Rp50O9XZyGVxUHexNxK7w==",
+  "dgSpecHash": "KtLl8BV++f3gdVb65um6Z2pqYXr05xHsw8CKfuu5cVpD/Mo63NTVbggtxTqRbPaGHH0dfqvZvmloSya9sCf0Gg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Downloads\\Practicom-main\\workers\\Worker.Core\\Worker.Core.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\לימודים שנה ב\\Practicom\\workers\\Worker.Core\\Worker.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

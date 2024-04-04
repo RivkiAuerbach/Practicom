@@ -17,12 +17,8 @@ export class RoleService {
   }
 
 //server
-  updateEmployee(role: Role): Observable<Role> {
-  
-  const url = `/api/Role?id=${role.id}`;
-
-  
-  return this._http.put<Role>(url, role).pipe(
+updateRoleToServer(id:number, role: Role): Observable<Role> {
+  return this._http.put<Role>(`https://localhost:7191/api/Role/${id}`, role).pipe(
     tap(updatedRole => console.log('Role updated successfully:', updatedRole))
   );
 }

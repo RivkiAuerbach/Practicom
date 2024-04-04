@@ -61,7 +61,7 @@ export class AllEmployeeComponent implements OnInit {
 
 
   editEmployee(employee:Employee)
-  { 
+  {
     this.router.navigate(['/editEmployee'],{ state: { employee } });
   }
 
