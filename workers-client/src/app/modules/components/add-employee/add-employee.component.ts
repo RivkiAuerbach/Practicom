@@ -26,7 +26,7 @@ export class AddEmployeeComponent {
         idNumber: ['', [Validators.required, Validators.pattern('^[0-9]{9}$')]], 
         dateSartingWork: ['', Validators.required], 
         dateOfBirth: ['', Validators.required], 
-        gender: ['male', Validators.required] 
+        gender: ['', Validators.required] 
       });
   }
 

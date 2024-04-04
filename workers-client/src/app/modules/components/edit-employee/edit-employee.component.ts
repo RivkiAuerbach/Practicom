@@ -27,8 +27,13 @@ export class EditEmployeeComponent implements OnInit {
       firstName: [this.employee.firstName, Validators.required],
       lastName: [this.employee.lastName, Validators.required],
       idNumber: [this.employee.idNumber, [Validators.required, Validators.pattern(/^\d{9}$/)]],
-      dateSartingWork: [this.employee.dateSartingWork, Validators.required],
-      dateOfBirth: [this.employee.dateOfBirth, Validators.required],
+      //  dateSartingWork: [this.employee.dateSartingWork, Validators.required],
+      dateSartingWork: [this.employee.dateSartingWork.toString().substring(0, 10), Validators.required],
+
+      // dateOfBirth: [this.employee.dateOfBirth, Validators.required],
+      dateOfBirth: [this.employee.dateOfBirth.toString().substring(0, 10),Validators.required],
+
+
       gender: [[this.employee.gender], Validators.required]
     });
   }

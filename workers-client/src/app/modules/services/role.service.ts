@@ -25,7 +25,8 @@ updateRoleToServer(id:number, role: Role): Observable<Role> {
 
 //server
   addRoleToServer(role: Role): Observable<Role> {
-  return this._http.post<Role>("/api/Role/", role);
+    
+   return this._http.post<Role>("/api/Role/", role);
 }
 
 //server

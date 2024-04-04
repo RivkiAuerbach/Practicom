@@ -24,7 +24,7 @@ import { RolesByEmployeeComponent } from './modules/components/roles-by-employee
 import { AddRoleComponent } from './modules/components/add-role/add-role.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { MatSelectModule } from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +61,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     NgbModule, 
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
        
   ],
   providers: [

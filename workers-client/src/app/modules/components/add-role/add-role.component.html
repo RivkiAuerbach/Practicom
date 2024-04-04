@@ -1,14 +1,13 @@
-<div>
-
-
-  <!-- <h2 mat-dialog-title>Add New Role</h2> -->
-
-
+ <div>
+  <h2 mat-dialog-title *ngIf="data.flag">Add New Role</h2>
+  <h2 mat-dialog-title *ngIf="!data.flag">Edit Role</h2>
   <div mat-dialog-content>
+
     <div class="mb-3">
       <label for="startDate" class="form-label">Date entry</label>
       <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="role.startDate" name="startDate">
     </div>
+
     <div class="mb-3">
       <label for="name" class="form-label">Title</label>
       <select class="form-select" id="name" [(ngModel)]="role.name" name="name">
@@ -20,12 +19,18 @@
         <option value="accountant">accountant</option>
       </select>
     </div>
-
-    <div class="mb-3">
-      <label for="isAdmin" class="form-label">Is the administrator?</label>
-      <input type="text" class="form-control" id="isAdmin" [(ngModel)]="role.isAdministrative" name="isAdmin">
+    
+    <div class="form-row">
+      <div class="form-group">
+        <label for="isManagement" class="form-label">Is Management</label>
+        <select class="form-select" id="isManagement" [(ngModel)]="role.isAdministrative" name="isManagement">
+          <option [ngValue]="true">True</option>
+          <option [ngValue]="false">False</option>
+        </select>
+      </div>
     </div>
-  </div>
+
+  </div> 
 
   <div mat-dialog-actions>
     <button mat-button [mat-dialog-close]="true" class="btn btn-primary">Cancel</button>

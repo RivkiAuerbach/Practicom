@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\models\\rolepostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|c:\\users\\user1\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\practicom\\workers\\workers\\models\\rolepostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\models\\rolepostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|solutionrelative:worker.core\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|c:\\users\\user1\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\practicom\\workers\\worker.data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|solutionrelative:worker.data\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -153,8 +153,7 @@
               "RelativeToolTip": "Worker.Core\\Models\\Role.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.055Z"
             },
             {
               "$type": "Document",
@@ -166,8 +165,7 @@
               "RelativeToolTip": "workers\\Models\\EmployeePostModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.053Z"
             },
             {
               "$type": "Document",
@@ -192,8 +190,7 @@
               "RelativeToolTip": "Worker.Core\\DTOs\\EmployeeDto.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAuwBkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.045Z"
             },
             {
               "$type": "Document",
@@ -205,8 +202,7 @@
               "RelativeToolTip": "Worker.Core\\DTOs\\RoleDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.046Z"
             },
             {
               "$type": "Document",
@@ -218,8 +214,7 @@
               "RelativeToolTip": "workers\\Controllers\\EmlpyeeController.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAgwEwAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.002Z"
             },
             {
               "$type": "Document",
@@ -231,8 +226,7 @@
               "RelativeToolTip": "Worker.Data\\Repositories\\RoleRepository.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAAwCwAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.044Z"
             },
             {
               "$type": "Document",
@@ -244,8 +238,7 @@
               "RelativeToolTip": "Worker.Core\\Models\\Employee.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.054Z"
             },
             {
               "$type": "Document",
