@@ -2,15 +2,15 @@
   <h2 mat-dialog-title *ngIf="data.flag">Add New Role</h2>
   <h2 mat-dialog-title *ngIf="!data.flag">Edit Role</h2>
   <div mat-dialog-content>
-
     <div class="mb-3">
       <label for="startDate" class="form-label">Date entry</label>
-      <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="role.startDate" name="startDate">
+      <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="role.startDate" name="startDate"   required (input)="validateDate()">
+      <div *ngIf="dateInvalid" class="error-message">Date of entry into the position must be later than/equal to the date of entry into the job</div>
     </div>
 
     <div class="mb-3">
       <label for="name" class="form-label">Title</label>
-      <select class="form-select" id="name" [(ngModel)]="role.name" name="name">
+      <select class="form-select" id="name" [(ngModel)]="role.name" name="name"   required (input)="validateName()">
         <option value="Secretary">Secretary</option>
         <option value="programmer">programmer</option>
         <option value="doctor">doctor</option>
@@ -18,6 +18,7 @@
         <option value="salesperson">salesperson</option>
         <option value="accountant">accountant</option>
       </select>
+      <div *ngIf="nameInvalid" class="error-message">It is not possible to select an employee twice for the same position</div>
     </div>
     
     <div class="form-row">
@@ -30,7 +31,14 @@
       </div>
     </div>
 
+    <!-- <div mat-dialog-content>
+      <div *ngIf="showErrorMessage" class="alert alert-danger" role="alert">
+        Duplicate role error: Cannot add duplicate role.
+      </div>
+    </div> -->
+    
   </div> 
+
 
   <div mat-dialog-actions>
     <button mat-button [mat-dialog-close]="true" class="btn btn-primary">Cancel</button>

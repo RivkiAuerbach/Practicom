@@ -20,7 +20,7 @@ export class RolesByEmployeeComponent implements OnInit {
   employee: Employee; 
   roles:Role[];
   role:Role=new Role(0,Name.Secretary,false,new Date(),0);
-  displayedColumns: string[] = [ 'position','name', 'weight', 'symbol','actions'];
+  displayedColumns: string[] = [ 'position','name', 'date', 'IsAdministrative','actions'];
   dataSource: MatTableDataSource<Role>;
  constructor(private _roleService:RoleService,public dialog: MatDialog){}
 
@@ -56,8 +56,7 @@ export class RolesByEmployeeComponent implements OnInit {
     }
   }
 
-  openDialog(role:Role,flag:Boolean): void {
-    
+  openDialog(role:Role,flag:Boolean): void { 
     const dialogRef = this.dialog.open(AddRoleComponent, {
       width: '250px',
       data: {employee: this.employee,role:role,flag:flag}
@@ -68,6 +67,4 @@ export class RolesByEmployeeComponent implements OnInit {
        this.getRoles();
     });
   }
-  
-
 }
