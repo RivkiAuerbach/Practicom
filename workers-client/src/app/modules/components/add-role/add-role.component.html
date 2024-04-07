@@ -5,12 +5,11 @@
     <div class="mb-3">
       <label for="startDate" class="form-label">Date entry</label>
       <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="role.startDate" name="startDate"   required (input)="validateDate()">
-      <div *ngIf="dateInvalid" class="error-message">Date of entry into the position must be later than/equal to the date of entry into the job</div>
     </div>
 
     <div class="mb-3">
       <label for="name" class="form-label">Title</label>
-      <select class="form-select" id="name" [(ngModel)]="role.name" name="name"   required (input)="validateName()">
+      <select class="form-select" id="name" [(ngModel)]="role.name" name="name">
         <option value="Secretary">Secretary</option>
         <option value="programmer">programmer</option>
         <option value="doctor">doctor</option>
@@ -18,7 +17,6 @@
         <option value="salesperson">salesperson</option>
         <option value="accountant">accountant</option>
       </select>
-      <div *ngIf="nameInvalid" class="error-message">It is not possible to select an employee twice for the same position</div>
     </div>
     
     <div class="form-row">
@@ -29,14 +27,7 @@
           <option [ngValue]="false">False</option>
         </select>
       </div>
-    </div>
-
-    <!-- <div mat-dialog-content>
-      <div *ngIf="showErrorMessage" class="alert alert-danger" role="alert">
-        Duplicate role error: Cannot add duplicate role.
-      </div>
-    </div> -->
-    
+    </div>   
   </div> 
 
 

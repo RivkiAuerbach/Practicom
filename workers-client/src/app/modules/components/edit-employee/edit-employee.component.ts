@@ -49,7 +49,7 @@ export class EditEmployeeComponent implements OnInit {
       // gender:this.employeeForm.value.gender
     };
     console.log(this.employeeForm.value.gender)
-console.log(employeePostModel)
+    console.log(employeePostModel)
     if (this.employeeForm.valid) {
    //sweet alert
    const Toast = Swal.mixin({

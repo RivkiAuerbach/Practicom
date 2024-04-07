@@ -25,6 +25,7 @@ import { AddRoleComponent } from './modules/components/add-role/add-role.compone
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +63,8 @@ import { MatSelectModule } from '@angular/material/select';
     NgbModule, 
     MatDialogModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
        
   ],
   providers: [

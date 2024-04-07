@@ -57,6 +57,8 @@ export class RolesByEmployeeComponent implements OnInit {
   }
 
   openDialog(role:Role,flag:Boolean): void { 
+    this.role.startDate.toString().substring(0, 10);
+    console.log(this.role.startDate +"auerbach")
     const dialogRef = this.dialog.open(AddRoleComponent, {
       width: '250px',
       data: {employee: this.employee,role:role,flag:flag}

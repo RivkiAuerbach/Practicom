@@ -1,4 +1,5 @@
 using worker.API.Mapping;
+using worker.API.Middlewars;
 using Worker.Core.Mapping;
 using Worker.Core.Repositories;
 using Worker.Core.Services;
@@ -47,5 +48,7 @@ app.UseAuthorization();
 app.UseCors();
 
 app.MapControllers();
+
+app.UseShabbatMiddleware();
 
 app.Run();
