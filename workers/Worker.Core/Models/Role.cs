@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Worker.Core.Models
 {
-    public enum Name { Secretary, programmer, doctor, kindergartner, salesperson, accountant }
+    public enum Name {
+        fullstack,
+        chips,
+        hardware,
+        verfication,
+        embedded,
+        electronics,
+        teamLeader,
+        projectManager,
+        productManager
+    }
     public class Role
     {
         public int Id { get; set; }

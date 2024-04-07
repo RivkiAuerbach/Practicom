@@ -1,13 +1,13 @@
 
-import { AfterViewInit, Component, ViewChild,TemplateRef, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ViewChild, TemplateRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Employee,Gender } from '../../models/employee.model';
+import { Employee, Gender } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatPaginatorModule} from '@angular/material/paginator';
-import {MatTableModule} from '@angular/material/table';
-import Swal from 'sweetalert2'
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-all-employee',
@@ -17,14 +17,14 @@ import Swal from 'sweetalert2'
 export class AllEmployeeComponent implements OnInit {
   employees: Employee[] | undefined;
   dataSource: MatTableDataSource<Employee>;
-  displayedColumns: string[] = ['id', 'firstname','lastname', 'date' ,'actions'];
+  displayedColumns: string[] = ['id', 'firstname', 'lastname', 'date', 'actions'];
   searchText: string = '';
 
   constructor(private _employeeService: EmployeeService, private router: Router) { }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-    ngOnInit() {
+  ngOnInit() {
     this.getEmployees();
   }
 
@@ -35,7 +35,7 @@ export class AllEmployeeComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
     });
   }
- 
+
   deleteEmployee(id: number): void {
     //sweet alert
     const Toast = Swal.mixin({
@@ -60,15 +60,13 @@ export class AllEmployeeComponent implements OnInit {
   }
 
 
-  editEmployee(employee:Employee)
-  {
-    this.router.navigate(['/editEmployee'],{ state: { employee } });
+  editEmployee(employee: Employee) {
+    this.router.navigate(['/editEmployee'], { state: { employee } });
   }
 
-
-  applyFilter() {
-    const searchText = this.searchText.trim().toLowerCase();
-    this.dataSource.filter = searchText;
+  applyFilter(event: KeyboardEvent) {
+    const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
+    this.dataSource.filter = filterValue;
   }
 }
 

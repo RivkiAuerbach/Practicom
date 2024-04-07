@@ -1,72 +1,81 @@
-import { Component, Inject, numberAttribute } from '@angular/core';
+
+import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Employee } from '../../models/employee.model';
-import { Role, Name } from '../../models/role.model';
 import { RoleService } from '../../services/role.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
+import { Name, Role } from '../../models/role.model';
 @Component({
   selector: 'app-add-role',
   templateUrl: './add-role.component.html',
   styleUrl: './add-role.component.css'
 })
 export class AddRoleComponent {
-  role: Role;
+  snackBarOpen: boolean;
+  roleForm: FormGroup;
   dateInvalid: boolean = false;
-  
-  constructor(private snackBar: MatSnackBar, private _roleService: RoleService, @Inject(MAT_DIALOG_DATA) public data: { employee: Employee, role: Role, flag: Boolean }) {
-    this.role = data.role;
+  role: Role;
+  titles: string[] = ['fullstack', 'chips', 'hardware', 'verfication', 'embedded', 'electronics', 'teamLeader', 'projectManager', 'productManager'];
 
-    this.role.startDate.toString().substring(0, 10);
-    console.log(this.role.startDate +"rivki")
-    console.log(this.role)
+  constructor(private fb: FormBuilder, private snackBar: MatSnackBar, private _roleService: RoleService,
+    @Inject(MAT_DIALOG_DATA) public data: { employee: Employee, role: Role, flag: Boolean }) {
+    this.snackBarOpen = false;
+    this.role = data.role;
+    this.roleForm = this.fb.group({
+      startDate: [this.role.startDate.toString().substring(0, 10), Validators.required],
+      name: [Name[this.role.name!], Validators.required],
+      isAdministrative: [this.role.isAdministrative]
+    });
+
   }
 
   addRole() {
-    const rolePostModel: any = {
-      name: Number(Name[this.role.name!]),
-      isAdministrative: this.role.isAdministrative,
-      startDate: this.role.startDate,
-      employeeId: this.data.employee.id
-    }
-   if(!this.dateInvalid)
-    { 
-       if (this.data.flag == true)
-      {
+    if (!this.dateInvalid) {
+      const rolePostModel: any = {
+        name: Number(Name[this.roleForm.value.name]),
+        isAdministrative: Boolean(this.roleForm.value.isAdministrative),
+        startDate: this.roleForm.value.startDate,
+        employeeId: this.data.employee.id
+      };
+      if (this.data.flag) {
         this._roleService.addRoleToServer(rolePostModel).subscribe(
           data => {
-            // Request successful
+            this.snackBarOpen = true;
           },
           error => {
             console.error('Error adding role:', error);
             this.snackBar.open('It is not possible to select an employee twice for the same position', 'Close');
+
           }
         );
       } else {
-        this._roleService.updateRoleToServer(this.role.id, rolePostModel).subscribe(
+        this._roleService.updateRoleToServer(this.data.role.id, rolePostModel).subscribe(
           data => {
-            // Request successful
+            this.snackBarOpen = true;
           },
           error => {
             console.error('Error updating role:', error);
             this.snackBar.open('It is not possible to select an employee twice for the same position', 'Close');
+
           }
         );
-
       }
     }
-    if(this.dateInvalid)
-    this.snackBar.open('Date of entry into the position must be later than/equal to the date of entry into the job', 'Close');
+
+    if (this.dateInvalid)
+      this.snackBar.open('Date of entry into the position must be later than/equal to the date of entry into the job', 'Close');
   }
 
- 
   validateDate(): void {
-  if (this.role.startDate<=this.data.employee.dateSartingWork) {
-    this.dateInvalid = true;
-  } else {
-    this.dateInvalid = false;
+    const startDate = new Date(this.roleForm.value.startDate);
+    const employeeStartDate = new Date(this.data.employee.dateSartingWork);
+    if (startDate <= employeeStartDate) {
+      this.dateInvalid = true;
+    } else {
+      this.dateInvalid = false;
+    }
   }
 }
 
-}
 

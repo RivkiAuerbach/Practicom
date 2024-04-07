@@ -1,52 +1,49 @@
-
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <h2 class="text-center">Add New Employee</h2>
-        <form [formGroup]="employeeForm">
-          <div class="mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" formControlName="firstName">
-          </div>
-          <div class="mb-3">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" formControlName="lastName">
-          </div>
-          <div class="mb-3">
-            <label for="idNumber" class="form-label">ID Number</label>
-            <input type="text" class="form-control" id="idNumber" formControlName="idNumber">          
-          </div>
-          <div class="mb-3">
-            <label for="dateStartingWork" class="form-label">Starting Work Date</label>
-            <input type="date" class="form-control" id="dateSartingWork" formControlName="dateSartingWork">
-          </div>
-          <div class="mb-3">
-            <label for="dateOfBirth" class="form-label">Date of Birth</label>
-            <input type="date" class="form-control" id="dateOfBirth" formControlName="dateOfBirth">
-          </div>
-          <div class="mb-3">
-            <label for="gender" class="form-label">Gender</label>
-            <select class="form-select" id="gender" formControlName="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary" (click)="addEmployee()">
-              <i class="bi bi-person-plus-fill"></i> Add Employee
-            </button>
-            <span style="margin: 0 20px;"></span> 
-            <button type="button" class="btn btn-danger" (click)="cancelAddEmployee()">
-              <i class="bi bi-x-lg"></i> Cancel
-            </button>
-            <span style="margin: 0 20px;"></span>
-            <button type="button" class="btn btn-success" (click)="addRoles()">
-              <i class="bi bi-people-fill"></i> Add Roles
-            </button>
-          </div>                  
-        </form>
-      </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center">Add New Employee</h2>
+      <form [formGroup]="employeeForm">
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" formControlName="firstName">
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" formControlName="lastName">
+        </div>
+        <div class="mb-3">
+          <label for="idNumber" class="form-label">ID Number</label>
+          <input type="text" class="form-control" id="idNumber" formControlName="idNumber">
+        </div>
+        <div class="mb-3">
+          <label for="dateStartingWork" class="form-label">Starting Work Date</label>
+          <input type="date" class="form-control" id="dateSartingWork" formControlName="dateSartingWork">
+        </div>
+        <div class="mb-3">
+          <label for="dateOfBirth" class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" id="dateOfBirth" formControlName="dateOfBirth">
+        </div>
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" id="gender" formControlName="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary" (click)="addEmployee()">
+            <i class="bi bi-person-plus-fill"></i> Add Employee
+          </button>
+          <span style="margin: 0 20px;"></span>
+          <button type="button" class="btn btn-danger" (click)="cancelAddEmployee()">
+            <i class="bi bi-x-lg"></i> Cancel
+          </button>
+          <span style="margin: 0 20px;"></span>
+          <button type="button" class="btn btn-success" (click)="addRoles()">
+            <i class="bi bi-people-fill"></i> Add Roles
+          </button>
+        </div>
+      </form>
     </div>
   </div>
-  
- 
+</div>

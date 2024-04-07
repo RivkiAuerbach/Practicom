@@ -9,29 +9,28 @@ import { tap } from 'rxjs/operators';
 })
 export class RoleService {
 
-  constructor(private _http: HttpClient) {}
+  constructor(private _http: HttpClient) { }
 
-//server
+  //server
   getRolesFromServer(): Observable<Role[]> {
-    return this._http.get<Role[]>("api/Role");
+    return this._http.get<Role[]>('api/Role');
   }
 
-//server
-updateRoleToServer(id:number, role: Role): Observable<Role> {
-  return this._http.put<Role>(`https://localhost:7191/api/Role/${id}`, role).pipe(
-    tap(updatedRole => console.log('Role updated successfully:', updatedRole))
-  );
-}
+  //server
+  updateRoleToServer(id: number, role: Role): Observable<Role> {
+    return this._http.put<Role>(`https://localhost:7191/api/Role/${id}`, role).pipe(
+      tap(updatedRole => console.log('Role updated successfully:', updatedRole))
+    );
+  }
 
-//server
+  //server
   addRoleToServer(role: Role): Observable<Role> {
-    
-   return this._http.post<Role>("/api/Role/", role);
-}
-
-//server
-  deleteRoleToServer(id: number): Observable<boolean> {
-    return this._http.delete<boolean>(`https://localhost:7191/api/Role/${id}`); 
+    return this._http.post<Role>('/api/Role/', role);
   }
- 
+
+  //server
+  deleteRoleToServer(id: number): Observable<boolean> {
+    return this._http.delete<boolean>(`https://localhost:7191/api/Role/${id}`);
+  }
+
 }

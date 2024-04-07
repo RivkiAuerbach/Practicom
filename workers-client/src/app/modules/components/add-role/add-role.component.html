@@ -1,40 +1,38 @@
- <div>
+<div>
   <h2 mat-dialog-title *ngIf="data.flag">Add New Role</h2>
   <h2 mat-dialog-title *ngIf="!data.flag">Edit Role</h2>
-  <div mat-dialog-content>
+  <div mat-dialog-content [formGroup]="roleForm">
+
     <div class="mb-3">
       <label for="startDate" class="form-label">Date entry</label>
-      <input type="date" class="form-control" id="dateOfBirth" [(ngModel)]="role.startDate" name="startDate"   required (input)="validateDate()">
+      <input type="date" class="form-control" id="dateOfBirth" formControlName="startDate" required
+        (input)="validateDate()">
     </div>
 
     <div class="mb-3">
       <label for="name" class="form-label">Title</label>
-      <select class="form-select" id="name" [(ngModel)]="role.name" name="name">
-        <option value="Secretary">Secretary</option>
-        <option value="programmer">programmer</option>
-        <option value="doctor">doctor</option>
-        <option value="kindergartner">kindergartner</option>
-        <option value="salesperson">salesperson</option>
-        <option value="accountant">accountant</option>
+      <select class="form-select" formControlName="name">
+        <option *ngFor="let title of titles" [value]="title">{{title}}</option>
       </select>
     </div>
-    
+
     <div class="form-row">
       <div class="form-group">
         <label for="isManagement" class="form-label">Is Management</label>
-        <select class="form-select" id="isManagement" [(ngModel)]="role.isAdministrative" name="isManagement">
-          <option [ngValue]="true">True</option>
-          <option [ngValue]="false">False</option>
+        <select class="form-select" formControlName="isAdministrative">
+          <option [value]=true>True</option>
+          <option [value]=false>False</option>
         </select>
       </div>
-    </div>   
-  </div> 
+    </div>
 
+  </div>
 
   <div mat-dialog-actions>
     <button mat-button [mat-dialog-close]="true" class="btn btn-primary">Cancel</button>
     <span style="margin: 0 10px;"></span>
-    <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="addRole()"
-      class="btn btn-primary">Save</button>
+    <button mat-button [mat-dialog-close]="snackBarOpen" cdkFocusInitial (click)="addRole()" class="btn btn-primary"
+      [disabled]="roleForm.invalid">Save</button>
+
   </div>
 </div>

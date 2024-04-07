@@ -9,30 +9,28 @@ import { tap } from 'rxjs/operators';
 })
 export class EmployeeService {
 
-  constructor(private _http: HttpClient) {}
+  constructor(private _http: HttpClient) { }
 
-//server
+  //server
   getEmployeeFromServer(): Observable<Employee[]> {
-    return this._http.get<Employee[]>("api/Emlpyee");
+    return this._http.get<Employee[]>('api/Emlpyee');
+  }
 
-}
+  //server
+  updateEmployeeToServer(id: number, employee: Employee): Observable<Employee> {
+    return this._http.put<Employee>(`https://localhost:7191/api/Emlpyee/${id}`, employee).pipe(
+      tap(updatedEmployee => console.log('Employee updated successfully:', updatedEmployee))
+    );
+  }
 
-//server
-  updateEmployeeToServer(id:number, employee: Employee): Observable<Employee> {
-  return this._http.put<Employee>(`https://localhost:7191/api/Emlpyee/${id}`, employee).pipe(
-    tap(updatedEmployee => console.log('Employee updated successfully:', updatedEmployee))
-  );
-
-}
-
-//server
+  //server
   addEmployeeToServer(employee: Employee): Observable<Employee> {
-  return this._http.post<Employee>("/api/Emlpyee/", employee);
-}
+    return this._http.post<Employee>('/api/Emlpyee/', employee);
+  }
 
-//server
+  //server
   deleteEmployeeToServer(id: number): Observable<boolean> {
-    return this._http.delete<boolean>(`https://localhost:7191/api/Emlpyee/${id}`); 
-}
- 
+    return this._http.delete<boolean>(`https://localhost:7191/api/Emlpyee/${id}`);
+  }
+
 }
