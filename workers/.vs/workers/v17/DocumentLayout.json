@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40015C21-DED8-4063-8B22-9B07B8919F6B}|Worker.Service\\Worker.Service.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{40015C21-DED8-4063-8B22-9B07B8919F6B}|Worker.Service\\Worker.Service.csproj|c:\\users\\user1\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\practicom\\workers\\worker.service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40015C21-DED8-4063-8B22-9B07B8919F6B}|Worker.Service\\Worker.Service.csproj|solutionrelative:worker.service\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|solutionrelative:worker.core\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|c:\\users\\user1\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\practicom\\workers\\worker.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD101634-2540-445C-B14B-3FF0EE35F713}|Worker.Core\\Worker.Core.csproj|solutionrelative:worker.core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -193,8 +193,7 @@
               "RelativeToolTip": "Worker.Data\\Repositories\\RoleRepository.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAYwDYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.044Z"
             },
             {
               "$type": "Document",
@@ -206,8 +205,7 @@
               "RelativeToolTip": "Worker.Core\\Models\\Employee.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.054Z"
             },
             {
               "$type": "Document",
@@ -219,8 +217,7 @@
               "RelativeToolTip": "Worker.Service\\RoleService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.06Z"
             },
             {
               "$type": "Document",
@@ -232,8 +229,7 @@
               "RelativeToolTip": "Worker.Core\\Models\\Role.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.055Z"
             },
             {
               "$type": "Document",
@@ -243,7 +239,7 @@
               "RelativeDocumentMoniker": "Worker.Service\\EmployeeService.cs",
               "ToolTip": "C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\Worker.Service\\EmployeeService.cs",
               "RelativeToolTip": "Worker.Service\\EmployeeService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T21:44:38.04Z",
               "EditorCaption": ""
@@ -258,8 +254,7 @@
               "RelativeToolTip": "Worker.Core\\Repositories\\IRoleRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.056Z"
             },
             {
               "$type": "Document",

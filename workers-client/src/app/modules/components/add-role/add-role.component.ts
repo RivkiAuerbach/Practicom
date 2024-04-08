@@ -34,10 +34,12 @@ export class AddRoleComponent {
     if (!this.dateInvalid) {
       const rolePostModel: any = {
         name: Number(Name[this.roleForm.value.name]),
-        isAdministrative: Boolean(this.roleForm.value.isAdministrative),
+        isAdministrative: this.roleForm.value.isAdministrative,
         startDate: this.roleForm.value.startDate,
         employeeId: this.data.employee.id
       };
+      rolePostModel.isAdministrative = rolePostModel.isAdministrative == 'true' ? true : false
+
       if (this.data.flag) {
         this._roleService.addRoleToServer(rolePostModel).subscribe(
           data => {
@@ -77,5 +79,8 @@ export class AddRoleComponent {
     }
   }
 }
+
+
+
 
 
