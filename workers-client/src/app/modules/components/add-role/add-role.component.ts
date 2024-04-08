@@ -16,7 +16,7 @@ export class AddRoleComponent {
   roleForm: FormGroup;
   dateInvalid: boolean = false;
   role: Role;
-  titles: string[] = ['fullstack', 'chips', 'hardware', 'verfication', 'embedded', 'electronics', 'teamLeader', 'projectManager', 'productManager'];
+  titles: string[] = ['fullStack', 'chips', 'hardware', 'verfication', 'embedded', 'electronics', 'teamLeader', 'projectManager', 'productManager'];
 
   constructor(private fb: FormBuilder, private snackBar: MatSnackBar, private _roleService: RoleService,
     @Inject(MAT_DIALOG_DATA) public data: { employee: Employee, role: Role, flag: Boolean }) {
