@@ -1,7 +1,7 @@
 
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { Employee, Gender } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
 import Swal from 'sweetalert2';
@@ -22,7 +22,10 @@ export class AddEmployeeComponent {
       lastName: ['', [Validators.required, Validators.minLength(1)]],
       idNumber: ['', [Validators.required, Validators.pattern('^[0-9]{9}$')]],
       dateSartingWork: ['', Validators.required],
-      dateOfBirth: ['', Validators.required],
+      dateOfBirth: ['', [Validators.required, (control: FormControl) => {
+        const age = this.calculateAge(new Date(control.value));
+        return age >= 18 ? null : { 'underAge': true };
+      }]],
       gender: ['', Validators.required]
     });
   }
@@ -36,7 +39,6 @@ export class AddEmployeeComponent {
       dateOfBirth: this.employeeForm.value.dateOfBirth,
       gender: Number(Gender[this.employeeForm.value.gender])
     };
-
     if (this.employeeForm.valid) {
       const Toast = Swal.mixin({
         toast: true,
@@ -71,8 +73,6 @@ export class AddEmployeeComponent {
     }
   }
 
-
-
   addRoles() {
     const employeePostModel: any = {
       firstName: this.employeeForm.value.firstName,
@@ -84,7 +84,6 @@ export class AddEmployeeComponent {
     };
 
     if (this.employeeForm.valid) {
-
       const employee: Employee = this.employeeForm.getRawValue();
       this._employeeService.addEmployeeToServer(employeePostModel).subscribe(data => {
         if (data) {
@@ -101,11 +100,17 @@ export class AddEmployeeComponent {
       });
     }
   }
-  
+
   cancelAddEmployee() {
     this.router.navigate(['/allEmployee']);
   }
 
+  //בדיקה שגיל העובד מעל 18
+  calculateAge(birthday: Date) {
+    const ageDiffMs = Date.now() - birthday.getTime();
+    const ageDate = new Date(ageDiffMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
 }
 
 

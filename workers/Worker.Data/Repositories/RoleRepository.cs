@@ -21,14 +21,14 @@ namespace Worker.Data.Repositories
         public async Task<Role> AddAsync(Role role)
         {
             //Checking whether the current employee has such a position
-            var existingRoles = await _context.Roles.Where(r => r.EmployeeId == role.EmployeeId).ToListAsync();
-            foreach (var existingRole in existingRoles)
-            {
-                if (existingRole.Name == role.Name)
-                {
-                    throw new Exception("A role with the same name and employeeId already exists.");
-                }
-            }
+            //var existingRoles = await _context.Roles.Where(r => r.EmployeeId == role.EmployeeId).ToListAsync();
+            //foreach (var existingRole in existingRoles)
+            //{
+            //    if (existingRole.Name == role.Name)
+            //    {
+            //        throw new Exception("A role with the same name and employeeId already exists.");
+            //    }
+            //}
             _context.Roles.Add(role);
             await _context.SaveChangesAsync();
 
@@ -53,20 +53,19 @@ namespace Worker.Data.Repositories
 
         public async Task<Role> GetByIdAsync(int id)
         {
-
             return await _context.Roles.FirstAsync(r => r.Id == id);
         }
         public async Task<Role> UpdateAsync(Role role)
         { 
             //Checking whether the current employee has such a position
-            var existingRoles = await _context.Roles.Where(r => r.EmployeeId == role.EmployeeId && r.Id != role.Id).ToListAsync();
-            foreach (var existingRole in existingRoles)
-            {
-                if (existingRole.Name == role.Name)
-                {
-                    throw new Exception("A role with the same name and employeeId already exists.");
-                }
-            }      
+            //var existingRoles = await _context.Roles.Where(r => r.EmployeeId == role.EmployeeId && r.Id != role.Id).ToListAsync();
+            //foreach (var existingRole in existingRoles)
+            //{
+            //    if (existingRole.Name == role.Name)
+            //    {
+            //        throw new Exception("A role with the same name and employeeId already exists.");
+            //    }
+            //}      
             var existRole = await GetByIdAsync(role.Id);      
             _context.Entry(existRole).CurrentValues.SetValues(role);  
             await _context.SaveChangesAsync();

@@ -17,7 +17,15 @@ namespace Worker.Service
             _employeeRepository = employeeRepository;
         }
         public async Task<Employee> AddAsync(Employee employee)
-        {
+        {   //Validation tests
+            var existingEmployees = await _employeeRepository.GetAllAsync();
+            if (existingEmployees.Any(e => employee.IdNumber == e.IdNumber) || employee.DateSartingWork.Year < employee.DateOfBirth.Year + 18 ||
+                DateTime.Now.Year - employee.DateOfBirth.Year < 18
+                || employee.IdNumber.Length != 9)
+            {
+                return null;
+            }
+
             return await _employeeRepository.AddAsync(employee);
         }
 
@@ -37,8 +45,15 @@ namespace Worker.Service
         }
 
         public async Task<Employee> UpdateAsync(Employee employee)
-        {
-          return await _employeeRepository.UpdateAsync(employee);
+        { //Validation tests
+            if ( employee.DateSartingWork.Year < employee.DateOfBirth.Year + 18 ||
+                DateTime.Now.Year - employee.DateOfBirth.Year < 18
+                || employee.IdNumber.Length != 9)
+            {
+                return null;
+            }
+
+            return await _employeeRepository.UpdateAsync(employee);
         }
     }
 }

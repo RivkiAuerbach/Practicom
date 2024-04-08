@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Employee, Gender } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
@@ -28,7 +28,10 @@ export class EditEmployeeComponent implements OnInit {
       lastName: [this.employee.lastName, Validators.required],
       idNumber: [this.employee.idNumber, [Validators.required, Validators.pattern(/^\d{9}$/)]],
       dateSartingWork: [this.employee.dateSartingWork.toString().substring(0, 10), Validators.required],
-      dateOfBirth: [this.employee.dateOfBirth.toString().substring(0, 10), Validators.required],
+      dateOfBirth: [this.employee.dateOfBirth.toString().substring(0, 10), [Validators.required, (control: FormControl) => {
+        const age = this.calculateAge(new Date(control.value));
+        return age >= 18 ? null : { 'underAge': true };
+      }]],
       gender: [[this.employee.gender], Validators.required]
     });
   }
@@ -73,6 +76,13 @@ export class EditEmployeeComponent implements OnInit {
         text: 'Invalid input/missing input'
       });
     }
+  }
+
+  //בדיקה שגיל העובד מעל 18
+  calculateAge(birthday: Date) {
+    const ageDiffMs = Date.now() - birthday.getTime();
+    const ageDate = new Date(ageDiffMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
   }
 
 }

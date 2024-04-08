@@ -19,6 +19,17 @@ namespace Worker.Service
         }
         public async Task<Role> AddAsync(Role role)
         {
+            //Checking whether the current employee has such a position
+            var getRoles=await _roleRepository.GetAllAsync();
+            var existingRoles = getRoles.Where(r => r.EmployeeId == role.EmployeeId);
+            foreach (var existingRole in existingRoles)
+            {
+                if (existingRole.Name == role.Name)
+                {
+                    return null;
+                }
+            }
+
             return await _roleRepository.AddAsync(role);
         }
 
@@ -39,6 +50,17 @@ namespace Worker.Service
 
         public async Task<Role> UpdateAsync(Role role)
         {
+            //Checking whether the current employee has such a position
+            var getRoles = await _roleRepository.GetAllAsync();
+            var existingRoles = getRoles.Where(r => r.EmployeeId == role.EmployeeId && r.Id != role.Id);
+            foreach (var existingRole in existingRoles)
+            {
+                if (existingRole.Name == role.Name)
+                {
+                    throw new Exception("A role with the same name and employeeId already exists.");
+                }
+            }
+
             return await _roleRepository.UpdateAsync(role);
         }
     }
