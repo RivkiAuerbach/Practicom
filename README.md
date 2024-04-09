@@ -101,4 +101,5 @@ The project uses: DTO & AutoMapper, Middleware, Asynchronous and identification 
 Correct division into components, services and models.
 Using bootStrap, Angular Material for design.
 
-#### &copy Rivki Auerbach 2024
+####  © Rivki Auerbach 2024 
+
