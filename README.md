@@ -2,8 +2,11 @@
 
 ## How to use:
 Download the project,
+
 Now you will see that you have a server side and a client side.
+
 Open the server side in VS,
+
 Don't forget to install the database on your computer before running-
 This is how you write in the terminal:
 
