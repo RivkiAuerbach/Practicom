@@ -108,6 +108,7 @@ The project uses: DTO & AutoMapper, Middleware, Asynchronous and identification 
 ### client side:
 
 Correct division into components, services and models.
+
 Using bootStrap, Angular Material for design.
 
 
