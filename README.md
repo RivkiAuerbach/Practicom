@@ -97,8 +97,8 @@ The interrelationships in the project are one-to-many when each employee has man
 The project uses: DTO & AutoMapper, Middleware, Asynchronous and identification with JWT.
 
 
-### client side -
+### client side:
 Correct division into components, services and models.
 Using bootStrap, Angular Material for design.
 
-#### All rights reserved Rivki Auerbach 2024
+#### `&copy;` Rivki Auerbach 2024
