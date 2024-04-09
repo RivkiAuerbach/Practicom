@@ -8,9 +8,12 @@ Now you will see that you have a server side and a client side.
 Open the server side in VS,
 
 Don't forget to install the database on your computer before running-
+
 This is how you write in the terminal:
 
+`Add-Migration <migration name>`
 
+`update-database`
 
 The DB has been updated!
 
