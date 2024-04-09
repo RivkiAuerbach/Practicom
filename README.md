@@ -1,6 +1,6 @@
-# Welcome to the employee management system - the perfect solution for every business manager, from Rivki Auerbach Software Engineering.
+## Welcome to the employee management system - the perfect solution for every business manager, from Rivki Auerbach Software Engineering.
 
-## How to use:
+### How to use:
 Download the project,
 
 Now you will see that you have a server side and a client side.
@@ -19,6 +19,7 @@ The DB has been updated!
 
 You will open the client side in VS code,
 Run in the terminal:
+
 `npm i`
 
 `ng s`
@@ -26,7 +27,7 @@ Run in the terminal:
 
 Get a link to the browser!
 
-## Building site:
+### Building site:
 When entering the site, you must identify yourself using login to verify that you are the administrator.
 
 If not, no problem! You can view the list of employees only.
@@ -70,14 +71,14 @@ At any stage, to return to the list of employees, click at the top of the websit
 
 Put a ❤ before you add/edit an employee, please check that all the fields meet all the correctness checks properly.
 
-### Efficient and smart use!!
+#### Efficient and smart use!!
 
 ---
 
-## Server architecture:
+### Server architecture:
 The server side was built as usual on the topic of layers as a division into four projects:
 
-#### Api - Core - Data - Service
+##### Api - Core - Data - Service
 
 When each part is responsible for its part:
 
@@ -96,8 +97,8 @@ The interrelationships in the project are one-to-many when each employee has man
 The project uses: DTO & AutoMapper, Middleware, Asynchronous and identification with JWT.
 
 
-## client side -
+### client side -
 Correct division into components, services and models.
 Using bootStrap, Angular Material for design.
 
-### All rights reserved Rivki Auerbach 2024
+#### All rights reserved Rivki Auerbach 2024
