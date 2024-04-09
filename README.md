@@ -99,9 +99,6 @@ responsible for contacting the database.
 the core of the system - does not have its own code but is responsible for all models and interfaces.
 
 
-
-
-
 The interrelationships in the project are one-to-many when each employee has many roles - a list of roles.
 
 
@@ -109,6 +106,7 @@ The project uses: DTO & AutoMapper, Middleware, Asynchronous and identification 
 
 
 ### client side:
+
 Correct division into components, services and models.
 Using bootStrap, Angular Material for design.
 
