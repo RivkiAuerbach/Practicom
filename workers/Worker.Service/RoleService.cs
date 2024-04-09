@@ -13,9 +13,11 @@ namespace Worker.Service
 
     {
         private readonly IRoleRepository _roleRepository;
-        public RoleService(IRoleRepository roleRepository)
+        private readonly IEmployeeRepository _employeeRepository;
+        public RoleService(IRoleRepository roleRepository, IEmployeeRepository employeeRepository)
         {
             _roleRepository = roleRepository;
+            _employeeRepository = employeeRepository;
         }
         public async Task<Role> AddAsync(Role role)
         {
@@ -26,9 +28,13 @@ namespace Worker.Service
             {
                 if (existingRole.Name == role.Name)
                 {
-                    return null;
+                    throw new Exception("A role with the same name and employeeId already exists.");
                 }
             }
+            //Checking that the job acceptance date is later/equal to the job start date
+            var getEmployee = await _employeeRepository.GetByIdAsync(role.EmployeeId);
+            if (getEmployee.DateSartingWork > role.StartDate)
+                return null;
 
             return await _roleRepository.AddAsync(role);
         }
@@ -60,7 +66,10 @@ namespace Worker.Service
                     throw new Exception("A role with the same name and employeeId already exists.");
                 }
             }
-
+            //Checking that the job acceptance date is later/equal to the job start date
+            var getEmployee = await _employeeRepository.GetByIdAsync(role.EmployeeId);
+            if (getEmployee.DateSartingWork > role.StartDate)
+                return null;
             return await _roleRepository.UpdateAsync(role);
         }
     }

@@ -47,6 +47,7 @@ export class AddRoleComponent {
           },
           error => {
             console.error('Error adding role:', error);
+           
             this.snackBar.open('It is not possible to select an employee twice for the same position', 'Close');
 
           }
@@ -57,6 +58,7 @@ export class AddRoleComponent {
             this.snackBarOpen = true;
           },
           error => {
+            console.log("rivki")
             console.error('Error updating role:', error);
             this.snackBar.open('It is not possible to select an employee twice for the same position', 'Close');
 
