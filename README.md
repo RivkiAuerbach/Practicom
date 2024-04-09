@@ -111,6 +111,7 @@ Correct division into components, services and models.
 
 Using bootStrap, Angular Material for design.
 
+##### The site was built: Server : .NET | Client : Angular
 
 ####  © Rivki Auerbach 2024 
 
