@@ -1,4 +1,4 @@
-## Welcome to the employee management system - the perfect solution for every business manager, from Rivki Auerbach Software Engineering.
+## Welcome to the employee management system - the perfect solution for every business manager
 
 ### How to use:
 Download the project,
@@ -82,13 +82,21 @@ The server side was built as usual on the topic of layers as a division into fou
 
 When each part is responsible for its part:
 
-[] Api - working with the client - receives the requests, passes them on to the service layer, and is responsible for returning the answer to the requester - success, failure, etc.
+##### Api 
 
-[] Service - responsible for the business logic - the correctness checks of the inputs are done in it, and if successful, it rolls the request on to the Data layer.
+working with the client - receives the requests, passes them on to the service layer, and is responsible for returning the answer to the requester - success, failure, etc.
 
-[] Data - responsible for contacting the database.
+##### Service
 
-[] Core - the core of the system - does not have its own code but is responsible for all models and interfaces.
+responsible for the business logic - the correctness checks of the inputs are done in it, and if successful, it rolls the request on to the Data layer.
+
+#####  Data
+
+responsible for contacting the database.
+
+#####  Core 
+
+the core of the system - does not have its own code but is responsible for all models and interfaces.
 
 
 The interrelationships in the project are one-to-many when each employee has many roles - a list of roles.
@@ -100,6 +108,7 @@ The project uses: DTO & AutoMapper, Middleware, Asynchronous and identification 
 ### client side:
 Correct division into components, services and models.
 Using bootStrap, Angular Material for design.
+
 
 ####  © Rivki Auerbach 2024 
 
