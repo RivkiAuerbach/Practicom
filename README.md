@@ -11,18 +11,18 @@ Don't forget to install the database on your computer before running-
 
 This is how you write in the terminal:
 
-`Add-Migration <migration name>`
+`<Add-Migration <migration name>>`
 
-`update-database`
+`<update-database>`
 
 The DB has been updated!
 
 You will open the client side in VS code,
 Run in the terminal:
 
-`npm i`
+`<npm i>`
 
-`ng s`
+`<ng s>`
 
 
 Get a link to the browser!
@@ -101,4 +101,4 @@ The project uses: DTO & AutoMapper, Middleware, Asynchronous and identification 
 Correct division into components, services and models.
 Using bootStrap, Angular Material for design.
 
-#### `&copy;` Rivki Auerbach 2024
+#### &copy Rivki Auerbach 2024
