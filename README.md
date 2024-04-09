@@ -11,18 +11,18 @@ Don't forget to install the database on your computer before running-
 
 This is how you write in the terminal:
 
-`<Add-Migration <migration name>>`
+`Add-Migration <migration name>`
 
-`<update-database>`
+`update-database`
 
 The DB has been updated!
 
 You will open the client side in VS code,
 Run in the terminal:
 
-`<npm i>`
+`npm i`
 
-`<ng s>`
+`ng s`
 
 
 Get a link to the browser!
@@ -69,7 +69,7 @@ and send an email to the site owner.
 
 At any stage, to return to the list of employees, click at the top of the website on the left side.
 
-Put a ❤ before you add/edit an employee, please check that all the fields meet all the correctness checks properly.
+Put ❤ before you add/edit an employee, please check that all the fields meet all the correctness checks properly.
 
 #### Efficient and smart use!!
 
@@ -82,13 +82,13 @@ The server side was built as usual on the topic of layers as a division into fou
 
 When each part is responsible for its part:
 
-Api - working with the client - receives the requests, passes them on to the service layer, and is responsible for returning the answer to the requester - success, failure, etc.
+[] Api - working with the client - receives the requests, passes them on to the service layer, and is responsible for returning the answer to the requester - success, failure, etc.
 
-Service - responsible for the business logic - the correctness checks of the inputs are done in it, and if successful, it rolls the request on to the Data layer.
+[] Service - responsible for the business logic - the correctness checks of the inputs are done in it, and if successful, it rolls the request on to the Data layer.
 
-Data - responsible for contacting the database.
+[] Data - responsible for contacting the database.
 
-Core - the core of the system - does not have its own code but is responsible for all models and interfaces.
+[] Core - the core of the system - does not have its own code but is responsible for all models and interfaces.
 
 
 The interrelationships in the project are one-to-many when each employee has many roles - a list of roles.
