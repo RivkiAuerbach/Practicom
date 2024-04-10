@@ -2,11 +2,9 @@
   <h2 mat-dialog-title *ngIf="data.flag">Add New Role</h2>
   <h2 mat-dialog-title *ngIf="!data.flag">Edit Role</h2>
   <div mat-dialog-content [formGroup]="roleForm">
-
     <div class="mb-3">
       <label for="startDate" class="form-label">Date entry</label>
-      <input type="date" class="form-control" id="dateOfBirth" formControlName="startDate" required
-        (input)="validateDate()">
+      <input type="date" class="form-control" id="dateOfBirth" formControlName="startDate">
     </div>
 
     <div class="mb-3">
@@ -25,8 +23,6 @@
         </select>
       </div>
     </div>
-
-
   </div>
 
   <div mat-dialog-actions>
@@ -34,6 +30,5 @@
     <span style="margin: 0 10px;"></span>
     <button mat-button [mat-dialog-close]="snackBarOpen" cdkFocusInitial (click)="addRole()" class="btn btn-primary"
       [disabled]="roleForm.invalid">Save</button>
-
   </div>
 </div>

@@ -14,7 +14,6 @@ import { Name, Role } from '../../models/role.model';
 export class AddRoleComponent {
   snackBarOpen: boolean;
   roleForm: FormGroup;
-  dateInvalid: boolean = false;
   role: Role;
   titles: string[] = ['fullStack', 'chips', 'hardware', 'verfication', 'embedded', 'electronics', 'teamLeader', 'projectManager', 'productManager'];
 
@@ -31,7 +30,6 @@ export class AddRoleComponent {
   }
 
   addRole() {
-    if (!this.dateInvalid) {
       const rolePostModel: any = {
         name: Number(Name[this.roleForm.value.name]),
         isAdministrative: this.roleForm.value.isAdministrative,
@@ -46,9 +44,8 @@ export class AddRoleComponent {
             this.snackBarOpen = true;
           },
           error => {
-            console.error('Error adding role:', error);
-           
-            this.snackBar.open('It is not possible to select an employee twice for the same position', 'Close');
+            console.error('Error adding role:', error);     
+            this.snackBar.open('Invalid input - the date of acceptance of the position must be after the start of work, and it is not possible to select a position twice.', 'Close');
 
           }
         );
@@ -58,29 +55,15 @@ export class AddRoleComponent {
             this.snackBarOpen = true;
           },
           error => {
-            console.log("rivki")
             console.error('Error updating role:', error);
-            this.snackBar.open('It is not possible to select an employee twice for the same position', 'Close');
+            this.snackBar.open('Invalid input - the date of acceptance of the position must be after the start of work, and it is not possible to select a position twice.', 'Close');
 
           }
         );
       }
     }
-
-    if (this.dateInvalid)
-      this.snackBar.open('Date of entry into the position must be later than/equal to the date of entry into the job', 'Close');
   }
 
-  validateDate(): void {
-    const startDate = new Date(this.roleForm.value.startDate);
-    const employeeStartDate = new Date(this.data.employee.dateSartingWork);
-    if (startDate <= employeeStartDate) {
-      this.dateInvalid = true;
-    } else {
-      this.dateInvalid = false;
-    }
-  }
-}
 
 
 

@@ -34,7 +34,7 @@ namespace Worker.Service
             //Checking that the job acceptance date is later/equal to the job start date
             var getEmployee = await _employeeRepository.GetByIdAsync(role.EmployeeId);
             if (getEmployee.DateSartingWork > role.StartDate)
-                return null;
+                throw new Exception("The job acceptance date must be later than or equal to the job start date");
 
             return await _roleRepository.AddAsync(role);
         }
@@ -69,7 +69,8 @@ namespace Worker.Service
             //Checking that the job acceptance date is later/equal to the job start date
             var getEmployee = await _employeeRepository.GetByIdAsync(role.EmployeeId);
             if (getEmployee.DateSartingWork > role.StartDate)
-                return null;
+                throw new Exception("The job acceptance date must be later than or equal to the job start date");
+
             return await _roleRepository.UpdateAsync(role);
         }
     }
