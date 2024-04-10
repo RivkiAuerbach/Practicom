@@ -1,4 +1,3 @@
-
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
@@ -13,16 +12,25 @@ import { AddRoleComponent } from '../add-role/add-role.component';
 @Component({
   selector: 'app-roles-by-employee',
   templateUrl: './roles-by-employee.component.html',
-  styleUrl: './roles-by-employee.component.css'
+  styleUrl: './roles-by-employee.component.css',
 })
 export class RolesByEmployeeComponent implements OnInit {
   @Input()
   employee: Employee;
   roles: Role[];
   role: Role = new Role(0, Name.chips, false, new Date(), 0);
-  displayedColumns: string[] = ['position', 'name', 'date', 'IsAdministrative', 'actions'];
+  displayedColumns: string[] = [
+    'position',
+    'name',
+    'date',
+    'IsAdministrative',
+    'actions',
+  ];
   dataSource: MatTableDataSource<Role>;
-  constructor(private _roleService: RoleService, public dialog: MatDialog) { }
+  constructor(
+    private _roleService: RoleService,
+    public dialog: MatDialog,
+  ) {}
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   ngOnInit() {
@@ -30,8 +38,8 @@ export class RolesByEmployeeComponent implements OnInit {
   }
 
   getRoles(): void {
-    this._roleService.getRolesFromServer().subscribe(data => {
-      this.roles = data.filter(role => role.employeeId == this.employee.id);
+    this._roleService.getRolesFromServer().subscribe((data) => {
+      this.roles = data.filter((role) => role.employeeId == this.employee.id);
       this.dataSource = new MatTableDataSource<Role>(this.roles);
       this.dataSource.paginator = this.paginator;
     });
@@ -45,7 +53,7 @@ export class RolesByEmployeeComponent implements OnInit {
 
   getNameByNumber(num: number): string | undefined {
     const nameKeys = Object.keys(Name);
-    const stringNameKeys = nameKeys.filter(key => isNaN(Number(key)));
+    const stringNameKeys = nameKeys.filter((key) => isNaN(Number(key)));
     const index = num - 1;
 
     if (index >= 0 && index < stringNameKeys.length) {
@@ -59,9 +67,9 @@ export class RolesByEmployeeComponent implements OnInit {
     this.role.startDate.toString().substring(0, 10);
     const dialogRef = this.dialog.open(AddRoleComponent, {
       width: '250px',
-      data: { employee: this.employee, role: role, flag: flag }
+      data: { employee: this.employee, role: role, flag: flag },
     });
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       this.getRoles();
     });
   }

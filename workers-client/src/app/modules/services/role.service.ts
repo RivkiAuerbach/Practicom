@@ -1,5 +1,5 @@
-import { Injectable } from "@angular/core";
-import { Role } from "../models/role.model";
+import { Injectable } from '@angular/core';
+import { Role } from '../models/role.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
@@ -8,8 +8,7 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class RoleService {
-
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient) {}
 
   //server
   getRolesFromServer(): Observable<Role[]> {
@@ -18,9 +17,13 @@ export class RoleService {
 
   //server
   updateRoleToServer(id: number, role: Role): Observable<Role> {
-    return this._http.put<Role>(`https://localhost:7191/api/Role/${id}`, role).pipe(
-      tap(updatedRole => console.log('Role updated successfully:', updatedRole))
-    );
+    return this._http
+      .put<Role>(`https://localhost:7191/api/Role/${id}`, role)
+      .pipe(
+        tap((updatedRole) =>
+          console.log('Role updated successfully:', updatedRole),
+        ),
+      );
   }
 
   //server
@@ -32,5 +35,4 @@ export class RoleService {
   deleteRoleToServer(id: number): Observable<boolean> {
     return this._http.delete<boolean>(`https://localhost:7191/api/Role/${id}`);
   }
-
 }

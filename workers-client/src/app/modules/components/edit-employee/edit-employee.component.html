@@ -15,23 +15,50 @@
         <form [formGroup]="employeeForm">
           <div class="mb-3">
             <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" formControlName="firstName">
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              formControlName="firstName"
+            />
           </div>
           <div class="mb-3">
             <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" formControlName="lastName">
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              formControlName="lastName"
+            />
           </div>
           <div class="mb-3">
             <label for="idNumber" class="form-label">ID Number</label>
-            <input type="text" class="form-control" id="idNumber" formControlName="idNumber">
+            <input
+              type="text"
+              class="form-control"
+              id="idNumber"
+              formControlName="idNumber"
+            />
           </div>
           <div class="mb-3">
-            <label for="dateSartingWork" class="form-label">Starting Work Date</label>
-            <input type="date" class="form-control" id="dateSartingWork" formControlName="dateSartingWork">
+            <label for="dateSartingWork" class="form-label"
+              >Starting Work Date</label
+            >
+            <input
+              type="date"
+              class="form-control"
+              id="dateSartingWork"
+              formControlName="dateSartingWork"
+            />
           </div>
           <div class="mb-3">
             <label for="dateOfBirth" class="form-label">Date of Birth</label>
-            <input type="date" class="form-control" id="dateOfBirth" formControlName="dateOfBirth">
+            <input
+              type="date"
+              class="form-control"
+              id="dateOfBirth"
+              formControlName="dateOfBirth"
+            />
           </div>
           <div class="mb-3">
             <label for="gender" class="form-label">Gender</label>
@@ -40,13 +67,18 @@
               <option value="1">Female</option>
             </select>
           </div>
-
         </form>
       </div>
     </div>
     <div class="text-center">
-      <br>
-      <button type="submit" class="btn btn-primary custom-btn" (click)="editEmployee()">Save</button>
+      <br />
+      <button
+        type="submit"
+        class="btn btn-primary custom-btn"
+        (click)="editEmployee()"
+      >
+        Save
+      </button>
     </div>
   </div>
 </div>

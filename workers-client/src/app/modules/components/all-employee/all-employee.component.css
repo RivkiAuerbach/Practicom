@@ -23,14 +23,14 @@ table {
   transition: width 0.4s linear;
 }
 
-.searchbar:hover>.search_input {
+.searchbar:hover > .search_input {
   padding: 0 10px;
   width: 450px;
   caret-color: red;
   transition: width 0.4s linear;
 }
 
-.searchbar:hover>.search_icon {
+.searchbar:hover > .search_icon {
   background: white;
   color: #e74c3c;
 }

@@ -1,60 +1,76 @@
 <div class="text-center">
-  <br>
+  <br />
 
   <div class="container h-100">
     <div class="d-flex justify-content-center h-100">
       <div class="searchbar">
-        <input class="search_input" type="text" name="" placeholder="Search..." (keyup)="applyFilter($event)">
+        <input
+          class="search_input"
+          type="text"
+          name=""
+          placeholder="Search..."
+          (keyup)="applyFilter($event)"
+        />
         <mat-icon class="search_icon">search</mat-icon>
       </div>
     </div>
   </div>
 
-  <br>
+  <br />
   <div class="mat-elevation-z8">
     <table mat-table [dataSource]="dataSource">
       <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> Id </th>
-        <td mat-cell *matCellDef="let element"> {{element.idNumber}} </td>
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let element">{{ element.idNumber }}</td>
       </ng-container>
 
-
       <ng-container matColumnDef="firstname">
-        <th mat-header-cell *matHeaderCellDef>First Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+        <th mat-header-cell *matHeaderCellDef>First Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
       </ng-container>
 
       <ng-container matColumnDef="lastname">
-        <th mat-header-cell *matHeaderCellDef>Last Name </th>
-        <td mat-cell *matCellDef="let element">{{element.lastName}}</td>
+        <th mat-header-cell *matHeaderCellDef>Last Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
       </ng-container>
-
 
       <ng-container matColumnDef="date">
-        <th mat-header-cell *matHeaderCellDef> Date Starting Work </th>
-        <td mat-cell *matCellDef="let element"> {{element.dateSartingWork | date: 'dd/MM/yyyy' }} </td>
+        <th mat-header-cell *matHeaderCellDef>Date Starting Work</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.dateSartingWork | date: "dd/MM/yyyy" }}
+        </td>
       </ng-container>
-
 
       <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef></th>
         <td mat-cell *matCellDef="let element">
-          <button mat-icon-button (click)="editEmployee(element)" mat-raised-button style="margin-right: 30px;">
+          <button
+            mat-icon-button
+            (click)="editEmployee(element)"
+            mat-raised-button
+            style="margin-right: 30px"
+          >
             <mat-icon>edit</mat-icon>
           </button>
-          <button mat-icon-button (click)="deleteEmployee(element.id)" mat-raised-button>
+          <button
+            mat-icon-button
+            (click)="deleteEmployee(element.id)"
+            mat-raised-button
+          >
             <mat-icon>delete</mat-icon>
           </button>
         </td>
       </ng-container>
 
-
-
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
 
-    <mat-paginator [pageSizeOptions]="[20, 50, 100, 200]" showFirstLastButtons
-      aria-label="Select page of periodic elements">
+    <mat-paginator
+      [pageSizeOptions]="[20, 50, 100, 200]"
+      showFirstLastButtons
+      aria-label="Select page of periodic elements"
+    >
     </mat-paginator>
   </div>
+</div>

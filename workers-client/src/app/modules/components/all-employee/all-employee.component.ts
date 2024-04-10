@@ -1,5 +1,10 @@
-
-import { AfterViewInit, Component, ViewChild, TemplateRef, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ViewChild,
+  TemplateRef,
+  OnInit,
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { Employee, Gender } from '../../models/employee.model';
 import { EmployeeService } from '../../services/employee.service';
@@ -12,15 +17,24 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-all-employee',
   templateUrl: './all-employee.component.html',
-  styleUrls: ['./all-employee.component.css']
+  styleUrls: ['./all-employee.component.css'],
 })
 export class AllEmployeeComponent implements OnInit {
   employees: Employee[] | undefined;
   dataSource: MatTableDataSource<Employee>;
-  displayedColumns: string[] = ['id', 'firstname', 'lastname', 'date', 'actions'];
+  displayedColumns: string[] = [
+    'id',
+    'firstname',
+    'lastname',
+    'date',
+    'actions',
+  ];
   searchText: string = '';
 
-  constructor(private _employeeService: EmployeeService, private router: Router) { }
+  constructor(
+    private _employeeService: EmployeeService,
+    private router: Router,
+  ) {}
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -29,8 +43,8 @@ export class AllEmployeeComponent implements OnInit {
   }
 
   getEmployees(): void {
-    this._employeeService.getEmployeeFromServer().subscribe(data => {
-      this.employees = data.filter(employee => employee.isActive);
+    this._employeeService.getEmployeeFromServer().subscribe((data) => {
+      this.employees = data.filter((employee) => employee.isActive);
       this.dataSource = new MatTableDataSource<Employee>(this.employees);
       this.dataSource.paginator = this.paginator;
     });
@@ -40,18 +54,18 @@ export class AllEmployeeComponent implements OnInit {
     //sweet alert
     const Toast = Swal.mixin({
       toast: true,
-      position: "top-end",
+      position: 'top-end',
       showConfirmButton: false,
       timer: 2000,
       timerProgressBar: true,
       didOpen: (toast) => {
         toast.onmouseenter = Swal.stopTimer;
         toast.onmouseleave = Swal.resumeTimer;
-      }
+      },
     });
     Toast.fire({
-      icon: "success",
-      title: "Deleted in successfully"
+      icon: 'success',
+      title: 'Deleted in successfully',
     }).then(() => {
       this._employeeService.deleteEmployeeToServer(id).subscribe(() => {
         this.getEmployees();
@@ -59,15 +73,14 @@ export class AllEmployeeComponent implements OnInit {
     });
   }
 
-
   editEmployee(employee: Employee) {
     this.router.navigate(['/editEmployee'], { state: { employee } });
   }
 
   applyFilter(event: KeyboardEvent) {
-    const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
+    const filterValue = (event.target as HTMLInputElement).value
+      .trim()
+      .toLowerCase();
     this.dataSource.filter = filterValue;
   }
 }
-
-

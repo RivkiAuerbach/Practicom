@@ -1,5 +1,5 @@
-import { Injectable } from "@angular/core";
-import { Employee } from "../models/employee.model";
+import { Injectable } from '@angular/core';
+import { Employee } from '../models/employee.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
@@ -8,8 +8,7 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class EmployeeService {
-
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient) {}
 
   //server
   getEmployeeFromServer(): Observable<Employee[]> {
@@ -18,9 +17,13 @@ export class EmployeeService {
 
   //server
   updateEmployeeToServer(id: number, employee: Employee): Observable<Employee> {
-    return this._http.put<Employee>(`https://localhost:7191/api/Emlpyee/${id}`, employee).pipe(
-      tap(updatedEmployee => console.log('Employee updated successfully:', updatedEmployee))
-    );
+    return this._http
+      .put<Employee>(`https://localhost:7191/api/Emlpyee/${id}`, employee)
+      .pipe(
+        tap((updatedEmployee) =>
+          console.log('Employee updated successfully:', updatedEmployee),
+        ),
+      );
   }
 
   //server
@@ -30,7 +33,8 @@ export class EmployeeService {
 
   //server
   deleteEmployeeToServer(id: number): Observable<boolean> {
-    return this._http.delete<boolean>(`https://localhost:7191/api/Emlpyee/${id}`);
+    return this._http.delete<boolean>(
+      `https://localhost:7191/api/Emlpyee/${id}`,
+    );
   }
-
 }

@@ -1,7 +1,6 @@
 {
-    "/api/*" :{
-     
-         "target":"https://localhost:7191/",
-         "secure":false
-     }
- }
+  "/api/*": {
+    "target": "https://localhost:7191/",
+    "secure": false
+  }
+}

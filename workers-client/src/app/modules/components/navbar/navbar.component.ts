@@ -5,13 +5,13 @@ import { EmployeeService } from '../../services/employee.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
   employees: Employee[];
 
   constructor(private _employeeService: EmployeeService) {
-    this._employeeService.getEmployeeFromServer().subscribe(data => {
+    this._employeeService.getEmployeeFromServer().subscribe((data) => {
       this.employees = data;
     });
   }
@@ -19,9 +19,17 @@ export class NavbarComponent {
   //המרה לאקסל
   exportToExcel(): void {
     if (this.employees) {
-      const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(this.employees);
-      const workbook: XLSX.WorkBook = { Sheets: { 'data': worksheet }, SheetNames: ['data'] };
-      const excelBuffer: any = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+      const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(
+        this.employees,
+      );
+      const workbook: XLSX.WorkBook = {
+        Sheets: { data: worksheet },
+        SheetNames: ['data'],
+      };
+      const excelBuffer: any = XLSX.write(workbook, {
+        bookType: 'xlsx',
+        type: 'array',
+      });
       this.saveAsExcelFile(excelBuffer, 'employees');
     }
   }
@@ -40,6 +48,8 @@ export class NavbarComponent {
 
   //התחברות לגימייל ושליחת מייל לבעל האתר
   handleEmailClick = () => {
-    window.open("https://mail.google.com/mail/?view=cm&to=rivki5760@gmail.com&su=Question/Comment&body=Dear Site Administrator");
+    window.open(
+      'https://mail.google.com/mail/?view=cm&to=rivki760.dev@gmail.com&su=Question/Comment&body=Dear Site Administrator',
+    );
   };
 }
