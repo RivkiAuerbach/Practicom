@@ -34,6 +34,13 @@ If not, no problem! Send an email to the site owner asking them to put you as an
 
 we will take care of you :).
 
+In secret we will find out that right now
+
+#####Username is: manager
+
+#####Password is: 123456
+
+
 If you are an administrator, you will be allowed to do everything the site offers for you:
 
 By entering the site you can view all your employees and for each employee you can delete and edit their details.
