@@ -30,9 +30,9 @@ Get a link to the browser!
 ### Building site:
 When entering the site, you must identify yourself using login to verify that you are the administrator.
 
-If not, no problem! You can view the list of employees only.
+If not, no problem! Send an email to the site owner asking them to put you as an administrator.
 
-It's also something :)
+we will take care of you :).
 
 If you are an administrator, you will be allowed to do everything the site offers for you:
 
