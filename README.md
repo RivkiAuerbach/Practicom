@@ -36,9 +36,9 @@ we will take care of you :).
 
 In secret we will find out that right now
 
-#####Username is: manager
+##### Username is: manager
 
-#####Password is: 123456
+##### Password is: 123456
 
 
 If you are an administrator, you will be allowed to do everything the site offers for you:
