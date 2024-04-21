@@ -1,16 +1,20 @@
 <mat-toolbar>
-  <button mat-icon-button routerLink="/allEmployee">
+  <button  *ngIf="navigateToDetails()"  mat-icon-button routerLink="/allEmployee">
     <mat-icon>menu</mat-icon>
   </button>
 
-  <span>Employee List</span>
+  <span>Employee management system</span>
   <span class="example-spacer"></span>
 
-  <button mat-icon-button routerLink="/addEmployee">
+  <button mat-icon-button routerLink="/logout">
+    <mat-icon>exit_to_app</mat-icon>
+  </button>  
+
+  <button  *ngIf="navigateToDetails()" mat-icon-button routerLink="/addEmployee">
     <mat-icon>add</mat-icon>
   </button>
 
-  <button mat-icon-button (click)="exportToExcel()">
+  <button  *ngIf="navigateToDetails()"  mat-icon-button (click)="exportToExcel()">
     <mat-icon>file_download</mat-icon>
   </button>
 

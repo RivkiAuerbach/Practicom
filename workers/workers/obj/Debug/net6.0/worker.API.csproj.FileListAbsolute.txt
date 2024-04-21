@@ -365,3 +365,4 @@ C:\Users\user1\Downloads\Practicom-main\workers\workers\obj\Debug\net6.0\refint\
 C:\Users\user1\Downloads\Practicom-main\workers\workers\obj\Debug\net6.0\worker.API.pdb
 C:\Users\user1\Downloads\Practicom-main\workers\workers\obj\Debug\net6.0\worker.API.genruntimeconfig.cache
 C:\Users\user1\Downloads\Practicom-main\workers\workers\obj\Debug\net6.0\ref\worker.API.dll
+C:\Users\user1\Desktop\לימודים שנה ב\Practicom\workers\workers\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
