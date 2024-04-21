@@ -16,16 +16,13 @@ export class NavbarComponent {
     });
   }
 
-  navigateToDetails():boolean {
+  navigateToDetails(): boolean {
     //ניווט רק אם ביצע כניסה לאתר
-     if(sessionStorage.getItem("ismanager")=="true")
-       {
-        return true;  
-      }
-     else
-       { 
-         return false; 
-      }
+    if (sessionStorage.getItem('ismanager') == 'true') {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   //המרה לאקסל

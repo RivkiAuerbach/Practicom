@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|c:\\users\\user1\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\practicom\\workers\\workers\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\workers\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{A9F02D10-B4E0-43FB-BF3B-5E63DACD6714}|workers\\worker.API.csproj|solutionrelative:workers\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|c:\\users\\user1\\desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\practicom\\workers\\worker.data\\worker.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|C:\\Users\\user1\\Desktop\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Practicom\\workers\\worker.data\\worker.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3797FB94-3FD9-4E26-BF94-6CDFC9ADB594}|Worker.Data\\Worker.Data.csproj|solutionrelative:worker.data\\worker.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -165,8 +165,7 @@
               "RelativeToolTip": "workers\\Controllers\\AuthController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T11:13:45.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T11:13:45.013Z"
             },
             {
               "$type": "Document",
@@ -178,8 +177,7 @@
               "RelativeToolTip": "Worker.Core\\Models\\Employee.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.054Z"
             },
             {
               "$type": "Document",
@@ -191,8 +189,7 @@
               "RelativeToolTip": "Worker.Service\\RoleService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.06Z"
             },
             {
               "$type": "Document",
@@ -204,8 +201,7 @@
               "RelativeToolTip": "Worker.Core\\Models\\Role.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.055Z"
             },
             {
               "$type": "Document",
@@ -217,8 +213,7 @@
               "RelativeToolTip": "Worker.Service\\EmployeeService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.04Z"
             },
             {
               "$type": "Document",
@@ -230,8 +225,7 @@
               "RelativeToolTip": "workers\\Models\\EmployeePostModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.053Z"
             },
             {
               "$type": "Document",
@@ -243,8 +237,7 @@
               "RelativeToolTip": "workers\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-25T21:44:38.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.058Z"
             },
             {
               "$type": "Document",
@@ -256,8 +249,7 @@
               "RelativeToolTip": "workers\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:37.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:37.899Z"
             },
             {
               "$type": "Document",
@@ -286,8 +278,7 @@
               "RelativeToolTip": "Worker.Data\\Worker.Data.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-14T17:24:29.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T17:24:29.857Z"
             },
             {
               "$type": "Document",
@@ -299,8 +290,7 @@
               "RelativeToolTip": "workers\\Models\\RolePostModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.054Z"
             },
             {
               "$type": "Document",
@@ -312,8 +302,7 @@
               "RelativeToolTip": "Worker.Core\\DTOs\\EmployeeDto.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAA+wBkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.045Z"
             },
             {
               "$type": "Document",
@@ -325,8 +314,7 @@
               "RelativeToolTip": "Worker.Data\\DataContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.052Z"
             },
             {
               "$type": "Document",
@@ -338,8 +326,7 @@
               "RelativeToolTip": "Worker.Data\\Repositories\\RoleRepository.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAYwDYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.044Z"
             },
             {
               "$type": "Document",
@@ -351,8 +338,7 @@
               "RelativeToolTip": "workers\\Controllers\\EmlpyeeController.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAgwEwAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.002Z"
             },
             {
               "$type": "Document",
@@ -364,8 +350,7 @@
               "RelativeToolTip": "Worker.Core\\DTOs\\RoleDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.046Z"
             },
             {
               "$type": "Document",
@@ -377,8 +362,7 @@
               "RelativeToolTip": "Worker.Core\\Repositories\\IRoleRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.056Z"
             },
             {
               "$type": "Document",
@@ -390,8 +374,7 @@
               "RelativeToolTip": "workers\\Middlewars\\ShabbatMiddleware.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T00:28:05.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T00:28:05.536Z"
             },
             {
               "$type": "Document",
@@ -403,8 +386,7 @@
               "RelativeToolTip": "workers\\worker.API.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-25T21:44:38.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.051Z"
             },
             {
               "$type": "Document",
@@ -416,8 +398,7 @@
               "RelativeToolTip": "Worker.Data\\Repositories\\EmployeeRepository.cs",
               "ViewState": "AQIAABMAAABAMzMzM/M4wBUAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.041Z"
             },
             {
               "$type": "Document",
@@ -429,8 +410,7 @@
               "RelativeToolTip": "Worker.Data\\Migrations\\20240402132045_dbWorker.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T13:20:45.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T13:20:45.848Z"
             },
             {
               "$type": "Document",
@@ -442,8 +422,7 @@
               "RelativeToolTip": "Worker.Core\\Worker.Core.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-01T21:03:40.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T21:03:40.332Z"
             },
             {
               "$type": "Document",
@@ -455,8 +434,7 @@
               "RelativeToolTip": "Worker.Data\\Migrations\\20240401200138_dbWorkers.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T20:01:38.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T20:01:38.496Z"
             },
             {
               "$type": "Document",
@@ -468,8 +446,7 @@
               "RelativeToolTip": "Worker.Core\\Services\\IEmployeeService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T14:54:48.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T14:54:48.834Z"
             },
             {
               "$type": "Document",
@@ -481,8 +458,7 @@
               "RelativeToolTip": "workers\\Mapping\\PostModelsMappingProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.038Z"
             },
             {
               "$type": "Document",
@@ -494,8 +470,7 @@
               "RelativeToolTip": "Worker.Core\\Repositories\\IEmployeeRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.056Z"
             },
             {
               "$type": "Document",
@@ -507,8 +482,7 @@
               "RelativeToolTip": "Worker.Core\\Services\\IRoleService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T14:54:47.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T14:54:47.7Z"
             },
             {
               "$type": "Document",
@@ -520,8 +494,7 @@
               "RelativeToolTip": "workers\\Controllers\\RoleController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.043Z"
             },
             {
               "$type": "Document",
@@ -533,8 +506,7 @@
               "RelativeToolTip": "Worker.Data\\Migrations\\20240328182808_MigrationName.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T18:28:08.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T18:28:08.914Z"
             },
             {
               "$type": "Document",
@@ -546,8 +518,7 @@
               "RelativeToolTip": "Worker.Data\\Migrations\\20240328165759_MigrationName.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T16:57:59.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T16:57:59.514Z"
             },
             {
               "$type": "Document",
@@ -559,8 +530,7 @@
               "RelativeToolTip": "Worker.Data\\Migrations\\20240328165649_MigrationName.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T16:56:49.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T16:56:49.647Z"
             },
             {
               "$type": "Document",
@@ -572,8 +542,7 @@
               "RelativeToolTip": "Worker.Core\\Mapping\\MappingProfile.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T21:44:38.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T21:44:38.047Z"
             },
             {
               "$type": "Document",
@@ -585,8 +554,7 @@
               "RelativeToolTip": "..\\..\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240325194012_MigrationName.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T19:40:12.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T19:40:12.877Z"
             },
             {
               "$type": "Document",
@@ -598,8 +566,7 @@
               "RelativeToolTip": "..\\..\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240325193901_MigrationName.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T19:39:01.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T19:39:01.268Z"
             },
             {
               "$type": "Document",
@@ -611,8 +578,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320140525_sample_db.cs",
               "ViewState": "AQIAAAMAAACAZ2ZmZmYUwAcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T14:05:25.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T14:05:25.251Z"
             },
             {
               "$type": "Document",
@@ -624,8 +590,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320130302_MigrationName.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T13:03:02.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T13:03:02.852Z"
             },
             {
               "$type": "Document",
@@ -637,8 +602,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\\u05E6\u05D9\u05E4\u05D5\u05E8\u05D4 \u05DC\u05E0\u05D3\u05D0\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DB\u05D9\u05EA\u05D4 \u05D5\\\u05E4\u05E8\u05E7\u05D8\u05D9\u05E7\u05D5\u05DD\\workers\\Worker.Data\\Migrations\\20240320124543_MigrationName.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T12:45:43.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T12:45:43.663Z"
             }
           ]
         }

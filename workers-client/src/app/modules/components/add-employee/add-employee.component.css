@@ -1,0 +1,44 @@
+.background-container {
+  position: relative;
+}
+
+.blur-background {
+  background-image: url("/assets/5340018.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  filter: brightness(50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+}
+
+.form-container {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2.text-center {
+  color: white;
+}
+
+.form-label {
+  color: white;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border-color: white;
+}

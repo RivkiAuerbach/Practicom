@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <button  *ngIf="navigateToDetails()"  mat-icon-button routerLink="/allEmployee">
+  <button *ngIf="navigateToDetails()" mat-icon-button routerLink="/allEmployee">
     <mat-icon>menu</mat-icon>
   </button>
 
@@ -8,13 +8,13 @@
 
   <button mat-icon-button routerLink="/logout">
     <mat-icon>exit_to_app</mat-icon>
-  </button>  
+  </button>
 
-  <button  *ngIf="navigateToDetails()" mat-icon-button routerLink="/addEmployee">
+  <button *ngIf="navigateToDetails()" mat-icon-button routerLink="/addEmployee">
     <mat-icon>add</mat-icon>
   </button>
 
-  <button  *ngIf="navigateToDetails()"  mat-icon-button (click)="exportToExcel()">
+  <button *ngIf="navigateToDetails()" mat-icon-button (click)="exportToExcel()">
     <mat-icon>file_download</mat-icon>
   </button>
 

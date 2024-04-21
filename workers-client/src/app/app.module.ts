@@ -27,11 +27,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoginComponent } from './modules/components/login/login.component';
 import { LogoutComponent } from './modules/components/logout/logout.component';
-
-
-
 import { MatCardModule } from '@angular/material/card';
-// import { MatCardContentModule } from '@angular/material/card-content';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,13 +50,9 @@ import { MatCardModule } from '@angular/material/card';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
-      // { path: '', redirectTo: 'allEmployee', pathMatch: 'full' },
       { path: '', component: LoginComponent },
       { path: 'logout', component: LogoutComponent },
-       { path: 'allEmployee', component: AllEmployeeComponent},
-
-
-
+      { path: 'allEmployee', component: AllEmployeeComponent },
       { path: 'editEmployee', component: EditEmployeeComponent },
       { path: 'allEmployee', component: AllEmployeeComponent },
       { path: 'addEmployee', component: AddEmployeeComponent },
@@ -79,10 +72,7 @@ import { MatCardModule } from '@angular/material/card';
     ReactiveFormsModule,
     MatSelectModule,
     MatSnackBarModule,
-
-
     MatCardModule,
-    //  MatCardContentModule
   ],
   providers: [
     // provideClientHydration()

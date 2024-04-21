@@ -1,17 +1,15 @@
+.logout-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-   .logout-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .logout-container img {
-    width: 200px; 
-  }
-  
-  .logout-container p {
-    font-size: 24px; 
-  }
-  
+.logout-container img {
+  width: 200px;
+}
+
+.logout-container p {
+  font-size: 24px;
+}
