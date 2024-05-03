@@ -120,5 +120,26 @@ Using bootStrap, Angular Material for design.
 
 ##### The site was built: Server : .NET | Client : Angular
 
+A taste of the site:
+
+![employee](./img/employee1.PNG)
+
+![employee](./img/employee2.PNG)
+
+![employee](./img/employee3.PNG)
+
+![employee](./img/employee4.PNG)
+
+![employee](./img/employee5.PNG)
+
+![employee](./img/employee6.PNG)
+
+![employee](./img/employee7.PNG)
+
+![employee](./img/employee8.PNG)
+
+![employee](./img/employee9.PNG)
+
+
 ####  © Rivki Auerbach 2024 
 
